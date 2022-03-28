@@ -6,11 +6,11 @@ export type SecondaryCharacteristics = {
   lifePoints: FoundryMaximumField;
   initiative: FoundryCalculableField;
   fatigue: FoundryMaximumField;
-  movementType: {
+  movementType?: {
     mod: FoundryField;
     final: FoundryField;
   };
-  movement: {
+  movement?: {
     maximum: FoundryField;
     running: FoundryField;
   };

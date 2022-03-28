@@ -1,7 +1,7 @@
-import { ExcelFormatter } from "../src/formatters/excel/ExcelFormatter";
+import { ExcelFormatter } from "../../src/formatters/excel/ExcelFormatter";
 
 test("format primary characteristics", () => {
-  const formatter = new ExcelFormatter(`${__dirname}/fixtures/PJ.xlsm`);
+  const formatter = new ExcelFormatter(`${__dirname}/../fixtures/PJ.xlsm`);
 
   const primaries = formatter.getPrimaryCharacteristics();
 

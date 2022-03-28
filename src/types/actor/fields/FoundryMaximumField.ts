@@ -1,5 +1,4 @@
-import { FoundryField } from "./FoundryField";
-
-export type FoundryMaximumField = FoundryField & {
+export type FoundryMaximumField = {
+  value?: number;
   max: number;
 };
