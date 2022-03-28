@@ -1,0 +1,39 @@
+{
+  "name": "abf-formatter",
+  "version": "0.0.1",
+  "description": "Transforms your Anima Beyond Fantasy excel files to the Anima Beyond Foundry JSON in order to import inside your campaigns",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node build/index.ts",
+    "start:dev": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Linkaynn/abf-formatter.git"
+  },
+  "author": "Jesé Romero Arbelo <jeseromeroarbelo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Linkaynn/abf-formatter/issues"
+  },
+  "engines": {
+    "node": "~16",
+    "npm": "dont use it please",
+    "yarn": "1.22.18"
+  },
+  "homepage": "https://github.com/Linkaynn/abf-formatter#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "tsc": "^2.0.4",
+    "typescript": "^4.6.3"
+  }
+}
