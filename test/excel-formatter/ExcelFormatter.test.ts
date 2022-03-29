@@ -1,17 +1,66 @@
 import {
   ExcelFormatter,
   UNKNOWN_SKILL_VALUE,
-} from "../../../src/formatters/excel/ExcelFormatter";
+} from "../../src/formatters/excel/ExcelFormatter";
 
-describe("skills", () => {
+describe("Excel formatter must", () => {
   let formatter: ExcelFormatter;
 
   beforeAll(() => {
-    formatter = new ExcelFormatter(`${__dirname}/../../fixtures/PJ.xlsm`);
+    formatter = new ExcelFormatter(`${__dirname}/../fixtures/PJ.xlsm`);
+  });
+
+  it("format primary characteristics", () => {
+    const v = formatter.getPrimaryCharacteristics();
+
+    expect(v.agility.value).toBe(7);
+    expect(v.constitution.value).toBe(9);
+    expect(v.dexterity.value).toBe(9);
+    expect(v.strength.value).toBe(9);
+    expect(v.intelligence.value).toBe(9);
+    expect(v.perception.value).toBe(5);
+    expect(v.power.value).toBe(10);
+    expect(v.willPower.value).toBe(7);
+  });
+
+  it("format secondary characteristics", () => {
+    const v = formatter.getSecondaryCharacteristics();
+
+    expect(v.fatigue.max).toBe(9);
+    expect(v.initiative.base).toBe(60);
+    expect(v.lifePoints.max).toBe(150);
+    expect(v.resistances.physical.base).toBe(50);
+    expect(v.resistances.disease.base).toBe(50);
+    expect(v.resistances.poison.base).toBe(50);
+    expect(v.resistances.magic.base).toBe(70);
+    expect(v.resistances.psychic.base).toBe(45);
+  });
+
+  it("format aspect", () => {
+    const v = formatter.getAspect();
+
+    expect(v.hair.value).toBe("Naranja");
+    expect(v.eyes.value).toBe("Verdes");
+    expect(v.height.value).toBe("1,80");
+    expect(v.weight.value).toBe("99,8");
+    expect(v.age.value).toBe(24);
+    expect(v.gender.value).toBe("Hombre");
+    expect(v.race.value).toBe("Humano");
+    expect(v.appearance.value).toBe("grande con gafas");
+    expect(v.size.value).toBe(18);
+  });
+
+  it("format general data", () => {
+    const v = formatter.getGeneralData();
+
+    expect(v.presence.value).toBe(40);
+    expect(v.money.gold.value).toBe(5);
+    expect(v.money.silver.value).toBe(131);
+    expect(v.money.cooper.value).toBe(8);
   });
 
   it("format athletic skills", () => {
-    const v = formatter.getSkills().athletics;
+    const v = formatter.getAthleticSkills();
 
     expect(v.acrobatics.base.value).toBe(-25);
     expect(v.athleticism.base.value).toBe(-10);
@@ -23,7 +72,7 @@ describe("skills", () => {
   });
 
   it("format social skills", () => {
-    const v = formatter.getSkills().social;
+    const v = formatter.getSocialSkills();
 
     expect(v.style.base.value).toBe(-10);
     expect(v.intimidate.base.value).toBe(-25);
@@ -35,7 +84,7 @@ describe("skills", () => {
   });
 
   it("format perception skills", () => {
-    const v = formatter.getSkills().perception;
+    const v = formatter.getPerceptionSkills();
 
     expect(v.notice.base.value).toBe(70);
     expect(v.search.base.value).toBe(-20);
@@ -43,7 +92,7 @@ describe("skills", () => {
   });
 
   it("format intellectual skills", () => {
-    const v = formatter.getSkills().intellectual;
+    const v = formatter.getIntellectualSkills();
 
     expect(v.animals.base.value).toBe(-15);
     expect(v.science.base.value).toBe(UNKNOWN_SKILL_VALUE);
@@ -60,7 +109,7 @@ describe("skills", () => {
   });
 
   it("format vigor skills", () => {
-    const v = formatter.getSkills().vigor;
+    const v = formatter.getVigorSkills();
 
     expect(v.composure.base.value).toBe(-25);
     expect(v.featsOfStrength.base.value).toBe(-30);
@@ -68,7 +117,7 @@ describe("skills", () => {
   });
 
   it("format subterfuge skills", () => {
-    const v = formatter.getSkills().subterfuge;
+    const v = formatter.getSubterfugeSkills();
 
     expect(v.lockPicking.base.value).toBe(-20);
     expect(v.disguise.base.value).toBe(-20);
@@ -80,7 +129,7 @@ describe("skills", () => {
   });
 
   it("format creative skills", () => {
-    const v = formatter.getSkills().creative;
+    const v = formatter.getCreativeSkills();
 
     expect(v.art.base.value).toBe(-10);
     expect(v.dance.base.value).toBe(UNKNOWN_SKILL_VALUE);
@@ -94,5 +143,14 @@ describe("skills", () => {
     expect(v.jewelry.base.value).toBe(55);
     expect(v.tailoring.base.value).toBe(-20);
     expect(v.puppetMaking.base.value).toBe(-10);
+  });
+
+  it("format combat data", () => {
+    const v = formatter.getCombatData();
+
+    expect(v.attack.base.value).toBe(120);
+    expect(v.dodge.base.value).toBe(150);
+    expect(v.block.base.value).toBe(20);
+    expect(v.wearArmor.value).toBe(10);
   });
 });

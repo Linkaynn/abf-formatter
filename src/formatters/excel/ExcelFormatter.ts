@@ -23,6 +23,7 @@ const capToDefault = (skill: unknown): number => {
 enum SheetNames {
   Principal = "Principal",
   General = "General",
+  PDs = "PDs",
 }
 
 export class ExcelFormatter {
@@ -68,19 +69,7 @@ export class ExcelFormatter {
     };
   }
 
-  getSkills(): ActorData["secondaries"] {
-    return {
-      athletics: this.getAthleticSkills(),
-      social: this.getSocialSkills(),
-      perception: this.getPerceptionSkills(),
-      intellectual: this.getIntellectualSkills(),
-      vigor: this.getVigorSkills(),
-      subterfuge: this.getSubterfugeSkills(),
-      creative: this.getCreativeSkills(),
-    };
-  }
-
-  private getAthleticSkills(): AthleticsSkills {
+  getAthleticSkills(): AthleticsSkills {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
@@ -94,7 +83,7 @@ export class ExcelFormatter {
     };
   }
 
-  private getSocialSkills(): SocialSkills {
+  getSocialSkills(): SocialSkills {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
@@ -108,7 +97,7 @@ export class ExcelFormatter {
     };
   }
 
-  private getPerceptionSkills(): PerceptionSkills {
+  getPerceptionSkills(): PerceptionSkills {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
@@ -118,7 +107,7 @@ export class ExcelFormatter {
     };
   }
 
-  private getIntellectualSkills(): IntellectualSkills {
+  getIntellectualSkills(): IntellectualSkills {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
@@ -137,7 +126,7 @@ export class ExcelFormatter {
     };
   }
 
-  private getVigorSkills(): VigorSkills {
+  getVigorSkills(): VigorSkills {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
@@ -147,7 +136,7 @@ export class ExcelFormatter {
     };
   }
 
-  private getSubterfugeSkills(): SubterfugeSkills {
+  getSubterfugeSkills(): SubterfugeSkills {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
@@ -161,7 +150,7 @@ export class ExcelFormatter {
     };
   }
 
-  private getCreativeSkills(): CreativeSkills {
+  getCreativeSkills(): CreativeSkills {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
@@ -194,6 +183,44 @@ export class ExcelFormatter {
       race: { value: sheetGeneral["F23"].v },
       size: { value: sheetPrincipal["K6"].v },
       weight: { value: sheetGeneral["L24"].v },
+    };
+  }
+
+  getGeneralData(): ActorData["general"] {
+    const sheetGeneral = this.getSheet(SheetNames.General);
+    const sheetPrincipal = this.getSheet(SheetNames.Principal);
+
+    return {
+      aspect: this.getAspect(),
+      presence: { value: sheetPrincipal["J57"].v },
+      money: {
+        gold: { value: sheetGeneral["Y59"].v },
+        silver: { value: sheetGeneral["Y61"].v },
+        cooper: { value: sheetGeneral["Y63"].v },
+      },
+    };
+  }
+
+  getCombatData(): ActorData["combat"] {
+    const sheetPDs = this.getSheet(SheetNames.PDs);
+
+    return {
+      attack: {
+        base: {
+          value: sheetPDs["AA22"].v,
+        },
+      },
+      dodge: {
+        base: {
+          value: sheetPDs["AA23"].v,
+        },
+      },
+      block: {
+        base: {
+          value: sheetPDs["AA24"].v,
+        },
+      },
+      wearArmor: { value: sheetPDs["AA25"].v },
     };
   }
 }

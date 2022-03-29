@@ -42,33 +42,17 @@ export type ActorData = {
   combat: {
     attack: {
       base: FoundryNumericField;
-      final: FoundryNumericField;
+      final?: FoundryNumericField;
     };
     block: {
       base: FoundryNumericField;
-      final: FoundryNumericField;
+      final?: FoundryNumericField;
     };
     dodge: {
       base: FoundryNumericField;
-      final: FoundryNumericField;
+      final?: FoundryNumericField;
     };
     wearArmor: FoundryNumericField;
-    totalArmor: {
-      at: {
-        cut: FoundryNumericField;
-        impact: FoundryNumericField;
-        thrust: FoundryNumericField;
-        heat: FoundryNumericField;
-        electricity: FoundryNumericField;
-        cold: FoundryNumericField;
-        energy: FoundryNumericField;
-      };
-    };
-    combatSpecialSkills: [];
-    combatTables: [];
-    ammo: [];
-    weapons: [];
-    armors: [];
   };
 
   mystic: {
