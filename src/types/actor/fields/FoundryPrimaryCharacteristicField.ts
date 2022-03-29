@@ -1,5 +1,5 @@
-import { FoundryField } from "./FoundryField";
+import { FoundryNumericField } from "./FoundryNumericField";
 
-export type FoundryPrimaryCharacteristicField = FoundryField & {
+export type FoundryPrimaryCharacteristicField = FoundryNumericField & {
   value: number;
 };

@@ -1,6 +1,6 @@
-import { FoundryField } from "./FoundryField";
+import { FoundryNumericField } from "./FoundryNumericField";
 
 export type FoundryCalculableField = {
-    base: FoundryField;
-    final?: FoundryField;
+    base: FoundryNumericField;
+    final?: FoundryNumericField;
 };

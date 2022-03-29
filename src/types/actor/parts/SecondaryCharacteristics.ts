@@ -1,18 +1,18 @@
 import { FoundryMaximumField } from "../fields/FoundryMaximumField";
 import { FoundryCalculableField } from "../fields/FoundryCalculableField";
-import { FoundryField } from "../fields/FoundryField";
+import { FoundryNumericField } from "../fields/FoundryNumericField";
 
 export type SecondaryCharacteristics = {
   lifePoints: FoundryMaximumField;
   initiative: FoundryCalculableField;
   fatigue: FoundryMaximumField;
   movementType?: {
-    mod: FoundryField;
-    final: FoundryField;
+    mod: FoundryNumericField;
+    final: FoundryNumericField;
   };
   movement?: {
-    maximum: FoundryField;
-    running: FoundryField;
+    maximum: FoundryNumericField;
+    running: FoundryNumericField;
   };
   resistances: {
     physical: FoundryCalculableField;

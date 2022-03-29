@@ -1,45 +1,36 @@
-import { FoundryField } from "../fields/FoundryField";
+import { FoundryNumericField } from "../fields/FoundryNumericField";
 import { FoundryCalculableField } from "../fields/FoundryCalculableField";
+import { AspectData } from "./AspectData";
 
 export type ActorDataGeneral = {
   modifiers: {
-    physicalActions: FoundryField;
+    physicalActions: FoundryNumericField;
     allActions: FoundryCalculableField;
     naturalPenalty: {
-      byArmors: FoundryField;
-      byWearArmorRequirement: FoundryField;
+      byArmors: FoundryNumericField;
+      byWearArmorRequirement: FoundryNumericField;
     };
   };
   destinyPoints: FoundryCalculableField;
-  presence: FoundryField;
-  aspect: {
-    hair: FoundryField;
-    eyes: FoundryField;
-    height: FoundryField;
-    weight: FoundryField;
-    age: FoundryField;
-    gender: FoundryField;
-    race: FoundryField;
-    appearance: FoundryField;
-    size: FoundryField;
-  };
+  presence: FoundryNumericField;
+  aspect: AspectData;
   advantages: [];
   contacts: [];
   inventory: [];
   money: {
-    cooper: FoundryField;
-    silver: FoundryField;
-    gold: FoundryField;
+    cooper: FoundryNumericField;
+    silver: FoundryNumericField;
+    gold: FoundryNumericField;
   };
-  description: FoundryField;
+  description: FoundryNumericField;
   disadvantages: [];
   elan: [];
   experience: {
-    current: FoundryField;
-    next: FoundryField;
+    current: FoundryNumericField;
+    next: FoundryNumericField;
   };
   languages: {
-    base: FoundryField;
+    base: FoundryNumericField;
     others: [];
   };
   levels: [];

@@ -8,17 +8,18 @@ import { IntellectualSkills } from "./parts/IntellectualSkills";
 import { SocialSkills } from "./parts/SocialSkills";
 import { SubterfugeSkills } from "./parts/SubterfugeSkills";
 import { CreativeSkills } from "./parts/CreativeSkills";
-import { FoundryField } from "./fields/FoundryField";
+import { FoundryNumericField } from "./fields/FoundryNumericField";
 import { FoundryMaximumField } from "./fields/FoundryMaximumField";
+import { FoundryBooleanField } from "./fields/FoundryBooleanField";
 
 export type ActorData = {
   version: number;
   ui: {
     contractibleItems: {};
     tabVisibility: {
-      mystic: FoundryField<boolean>;
-      domine: FoundryField<boolean>;
-      psychic: FoundryField<boolean>;
+      mystic: FoundryBooleanField;
+      domine: FoundryBooleanField;
+      psychic: FoundryBooleanField;
     };
   };
   general: ActorDataGeneral;
@@ -40,27 +41,27 @@ export type ActorData = {
 
   combat: {
     attack: {
-      base: FoundryField;
-      final: FoundryField;
+      base: FoundryNumericField;
+      final: FoundryNumericField;
     };
     block: {
-      base: FoundryField;
-      final: FoundryField;
+      base: FoundryNumericField;
+      final: FoundryNumericField;
     };
     dodge: {
-      base: FoundryField;
-      final: FoundryField;
+      base: FoundryNumericField;
+      final: FoundryNumericField;
     };
-    wearArmor: FoundryField;
+    wearArmor: FoundryNumericField;
     totalArmor: {
       at: {
-        cut: FoundryField;
-        impact: FoundryField;
-        thrust: FoundryField;
-        heat: FoundryField;
-        electricity: FoundryField;
-        cold: FoundryField;
-        energy: FoundryField;
+        cut: FoundryNumericField;
+        impact: FoundryNumericField;
+        thrust: FoundryNumericField;
+        heat: FoundryNumericField;
+        electricity: FoundryNumericField;
+        cold: FoundryNumericField;
+        energy: FoundryNumericField;
       };
     };
     combatSpecialSkills: [];
@@ -73,12 +74,12 @@ export type ActorData = {
   mystic: {
     act: {
       main: {
-        base: FoundryField;
-        final: FoundryField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
       alternative: {
-        base: FoundryField;
-        final: FoundryField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
     };
     zeon: {
@@ -87,60 +88,60 @@ export type ActorData = {
       max: number;
     };
     zeonRegeneration: {
-      base: FoundryField;
-      final: FoundryField;
+      base: FoundryNumericField;
+      final: FoundryNumericField;
     };
     innateMagic: {
-      main: FoundryField;
-      alternative: FoundryField;
+      main: FoundryNumericField;
+      alternative: FoundryNumericField;
     };
     magicProjection: {
-      base: FoundryField;
-      final: FoundryField;
+      base: FoundryNumericField;
+      final: FoundryNumericField;
       imbalance: {
         offensive: {
-          base: FoundryField;
-          final: FoundryField;
+          base: FoundryNumericField;
+          final: FoundryNumericField;
         };
         defensive: {
-          base: FoundryField;
-          final: FoundryField;
+          base: FoundryNumericField;
+          final: FoundryNumericField;
         };
       };
     };
     magicLevel: {
       spheres: {
-        essence: FoundryField;
-        water: FoundryField;
-        earth: FoundryField;
-        creation: FoundryField;
-        darkness: FoundryField;
-        necromancy: FoundryField;
-        light: FoundryField;
-        destruction: FoundryField;
-        air: FoundryField;
-        fire: FoundryField;
-        illusion: FoundryField;
+        essence: FoundryNumericField;
+        water: FoundryNumericField;
+        earth: FoundryNumericField;
+        creation: FoundryNumericField;
+        darkness: FoundryNumericField;
+        necromancy: FoundryNumericField;
+        light: FoundryNumericField;
+        destruction: FoundryNumericField;
+        air: FoundryNumericField;
+        fire: FoundryNumericField;
+        illusion: FoundryNumericField;
       };
-      total: FoundryField;
-      used: FoundryField;
+      total: FoundryNumericField;
+      used: FoundryNumericField;
     };
     summoning: {
       summon: {
-        base: FoundryField;
-        final: FoundryField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
       banish: {
-        base: FoundryField;
-        final: FoundryField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
       bind: {
-        base: FoundryField;
-        final: FoundryField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
       control: {
-        base: FoundryField;
-        final: FoundryField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
     };
     spells: [];
@@ -195,39 +196,39 @@ export type ActorData = {
       };
     };
     martialKnowledge: {
-      used: FoundryField;
-      max: FoundryField;
+      used: FoundryNumericField;
+      max: FoundryNumericField;
     };
     kiAccumulation: {
       strength: {
-        accumulated: FoundryField;
-        base: FoundryField;
-        final: FoundryField;
+        accumulated: FoundryNumericField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
       agility: {
-        accumulated: FoundryField;
-        base: FoundryField;
-        final: FoundryField;
+        accumulated: FoundryNumericField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
       dexterity: {
-        accumulated: FoundryField;
-        base: FoundryField;
-        final: FoundryField;
+        accumulated: FoundryNumericField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
       constitution: {
-        accumulated: FoundryField;
-        base: FoundryField;
-        final: FoundryField;
+        accumulated: FoundryNumericField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
       willPower: {
-        accumulated: FoundryField;
-        base: FoundryField;
-        final: FoundryField;
+        accumulated: FoundryNumericField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
       power: {
-        accumulated: FoundryField;
-        base: FoundryField;
-        final: FoundryField;
+        accumulated: FoundryNumericField;
+        base: FoundryNumericField;
+        final: FoundryNumericField;
       };
       generic: FoundryMaximumField;
     };
@@ -235,19 +236,19 @@ export type ActorData = {
 
   psychic: {
     psychicPotential: {
-      base: FoundryField;
-      final: FoundryField;
+      base: FoundryNumericField;
+      final: FoundryNumericField;
     };
     psychicProjection: {
-      base: FoundryField;
-      final: FoundryField;
+      base: FoundryNumericField;
+      final: FoundryNumericField;
     };
     psychicPoints: FoundryMaximumField;
     psychicPowers: [];
     psychicDisciplines: [];
     mentalPatterns: [];
     innatePsychicPower: {
-      amount: FoundryField;
+      amount: FoundryNumericField;
     };
     innatePsychicPowers: [];
   };

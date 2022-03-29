@@ -10,6 +10,7 @@ import { CreativeSkills } from "../../types/actor/parts/CreativeSkills";
 import { IntellectualSkills } from "../../types/actor/parts/IntellectualSkills";
 import { VigorSkills } from "../../types/actor/parts/VigorSkills";
 import { SubterfugeSkills } from "../../types/actor/parts/SubterfugeSkills";
+import { AspectData } from "../../types/actor/parts/AspectData";
 
 export const UNKNOWN_SKILL_VALUE = -200;
 
@@ -21,6 +22,7 @@ const capToDefault = (skill: unknown): number => {
 
 enum SheetNames {
   Principal = "Principal",
+  General = "General",
 }
 
 export class ExcelFormatter {
@@ -175,6 +177,23 @@ export class ExcelFormatter {
       jewelry: { base: { value: sheet["Q70"].v } },
       tailoring: { base: { value: sheet["Q71"].v } },
       puppetMaking: { base: { value: sheet["Q72"].v } },
+    };
+  }
+
+  getAspect(): AspectData {
+    const sheetGeneral = this.getSheet(SheetNames.General);
+    const sheetPrincipal = this.getSheet(SheetNames.Principal);
+
+    return {
+      age: { value: sheetGeneral["F26"].v },
+      appearance: { value: sheetGeneral["P24"].v },
+      eyes: { value: sheetGeneral["I25"].v },
+      gender: { value: sheetGeneral["F24"].v },
+      hair: { value: sheetGeneral["N25"].v },
+      height: { value: sheetGeneral["I24"].v },
+      race: { value: sheetGeneral["F23"].v },
+      size: { value: sheetPrincipal["K6"].v },
+      weight: { value: sheetGeneral["L24"].v },
     };
   }
 }
