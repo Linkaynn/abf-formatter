@@ -1,0 +1,4493 @@
+{
+  "name": "Noximilian",
+  "type": "character",
+  "img": "assets/tokens/Players/noxi.png",
+  "data": {
+    "version": 1,
+    "ui": {
+      "contractibleItems": {
+        "tl3LkDFNLoKwQffy": false,
+        "IKGJ0JbSoq2wTNgQ": true,
+        "4w1WRO6rJDGsCCyO": false,
+        "cyslEzksqg0v2SgB": false,
+        "9RDwuV98vRWwUNKZ": false,
+        "kjF3dd9nbULGOJ3O": false,
+        "G7dDQRtgYGQr0SkD": false,
+        "kjci9A08VenAsnjn": false,
+        "mbIG6KUIN1mWzr1b": "true",
+        "k3kaY1uv6Vob1scM": "true",
+        "1W0WymtY9vbWpSuG": false,
+        "AzJZ9IjKfDgV9FgU": "false",
+        "kuC5mnmGNoe0bcc0": "true",
+        "7typCfuxVqND39kN": "true",
+        "ldGnBwFnqsG29Bqp": "true",
+        "xRDxZRSwFLvmMQ4J": "true",
+        "snRSEgv3uNBisj50": "true",
+        "8b5PFdHl44q3X77j": "true",
+        "9iCVgyfN6CGCac1K": "true",
+        "eHf69TRAYksQvgcp": "true",
+        "wnP82Eaopcb0dMUg": "true",
+        "zj5vgYvLmxUBOfNX": "true",
+        "KkOY5s6d5sOtMcWl": "true",
+        "OgSnHRdhtk6octCx": "true",
+        "efOJXvBHW9O1DZZI": "true",
+        "3GQV1fTnlkVrw8CU": "true",
+        "CtrZJUy2QqTbuxSU": "true",
+        "TOv7tKgpwyl5Zrto": "true",
+        "3vJql0tVzLN7HOn3": "true",
+        "mtykbeYHQldd4aWr": "true",
+        "c1uzr93H6BZEmK3b": "true",
+        "4Ss1E41PhGRhK8rm": "true",
+        "YbwwMTSj0Kv8QMlv": "true",
+        "fiWAzliXxOhJ41jJ": false,
+        "U68ZDNOPoTW9IVtf": false,
+        "22JorgxBlKyGMqZh": false,
+        "Pp0ygzmTgMu7Vmh7": false,
+        "CGRncMHnnOithkTP": "true"
+      },
+      "tabVisibility": {
+        "mystic": {
+          "value": true
+        },
+        "domine": {
+          "value": false
+        },
+        "psychic": {
+          "value": false
+        }
+      }
+    },
+    "general": {
+      "modifiers": {
+        "physicalActions": {
+          "value": 0
+        },
+        "allActions": {
+          "base": {
+            "value": 0
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "naturalPenalty": {
+          "byArmors": {
+            "value": 0
+          },
+          "byWearArmorRequirement": {
+            "value": 0
+          }
+        }
+      },
+      "destinyPoints": {
+        "base": {
+          "value": 100
+        },
+        "final": {
+          "value": null
+        }
+      },
+      "presence": {
+        "value": 0,
+        "base": {
+          "value": 40
+        }
+      },
+      "aspect": {
+        "hair": {
+          "value": "Naranja"
+        },
+        "eyes": {
+          "value": "Verdes"
+        },
+        "height": {
+          "value": "1,80"
+        },
+        "weight": {
+          "value": "99,8"
+        },
+        "age": {
+          "value": 24
+        },
+        "gender": {
+          "value": "Hombre"
+        },
+        "race": {
+          "value": "Humano"
+        },
+        "appearance": {
+          "value": "grande con gafas"
+        },
+        "size": {
+          "value": 18
+        },
+        "genre": {
+          "value": "Macho"
+        }
+      },
+      "advantages": [],
+      "contacts": [],
+      "inventory": [
+        {
+          "_id": "z7oc2U-OCOYFhwYT8tKdB",
+          "type": "inventoryItem",
+          "name": "Reloj de bolsillo",
+          "data": {
+            "amount": {
+              "value": 1
+            },
+            "weight": {
+              "value": 0.1
+            }
+          }
+        },
+        {
+          "_id": "5TlK6BQNojZrIuRcF2XTO",
+          "type": "inventoryItem",
+          "name": "Libro Metamagia, Poder sobre natural (LA DEJO ATRAS LALIGA)",
+          "data": {
+            "amount": {
+              "value": null
+            },
+            "weight": {
+              "value": 0.8
+            }
+          }
+        },
+        {
+          "_id": "qq3P0WKf31WpVh3FDD6Lc",
+          "type": "inventoryItem",
+          "name": "rasiones",
+          "data": {
+            "amount": {
+              "value": 24
+            },
+            "weight": {
+              "value": 0.1
+            }
+          }
+        },
+        {
+          "_id": "reC2Z8cwFGYIvmHCaUm4h",
+          "type": "inventoryItem",
+          "name": "Diario de Max",
+          "data": {
+            "amount": {
+              "value": 1
+            },
+            "weight": {
+              "value": 0.2
+            }
+          }
+        },
+        {
+          "_id": "Oxv4W2IS92ydF_PPu63rg",
+          "type": "inventoryItem",
+          "name": "Collar escarabajo del sol +10ATK +10Advertir (+30 intimidación persuación itzianos)",
+          "data": {
+            "amount": {
+              "value": 1
+            },
+            "weight": {
+              "value": 0.1
+            }
+          }
+        },
+        {
+          "_id": "zXf3YiucMNr9AvDT5Gxic",
+          "type": "inventoryItem",
+          "name": "Hacha leñador (LA DEJO ATRAS LA LIGA)",
+          "data": {
+            "amount": {
+              "value": 1
+            },
+            "weight": {
+              "value": 1.2
+            }
+          }
+        },
+        {
+          "_id": "bHUmCGAkkiiYyUyrVg1Ht",
+          "type": "inventoryItem",
+          "name": "Saeta",
+          "data": {
+            "amount": {
+              "value": 1
+            },
+            "weight": {
+              "value": 0.9
+            }
+          }
+        },
+        {
+          "_id": "etjTwe2CA_7rObheGoVVX",
+          "type": "inventoryItem",
+          "name": "ballesta",
+          "data": {
+            "amount": {
+              "value": 1
+            },
+            "weight": {
+              "value": 1.1
+            }
+          }
+        }
+      ],
+      "money": {
+        "cooper": {
+          "value": 8
+        },
+        "silver": {
+          "value": 131
+        },
+        "gold": {
+          "value": 5
+        }
+      },
+      "description": {
+        "value": "<p>Los relojes y elementos antiguos. (cualquier historia del pasado le puede interezar). Impuntualidad Encontrar a su padre - Quiere mejorar en las magias (sus propios conocimientos magicos limitados) en las que emplear la construcci&oacute;n, destrucci&oacute;n para facilitar el uso y la reparaci&oacute;n de los relojes o peque&ntilde;os objetos mecanicos.</p>"
+      },
+      "disadvantages": [],
+      "elan": [],
+      "experience": {
+        "current": {
+          "value": 140
+        },
+        "next": {
+          "value": 150
+        }
+      },
+      "languages": {
+        "base": {
+          "value": "Español"
+        },
+        "others": []
+      },
+      "levels": [
+        {
+          "_id": "InvyHSxgFjeiu_E8DWL1N",
+          "type": "level",
+          "name": "Warlock",
+          "data": {
+            "level": 3
+          }
+        }
+      ],
+      "notes": [],
+      "titles": [
+        {
+          "_id": "ClgSGYJG7qVtOOf0SX72A",
+          "type": "title",
+          "name": "Aprendiz de relojero de Osborne",
+          "data": {}
+        }
+      ]
+    },
+    "characteristics": {
+      "primaries": {
+        "agility": {
+          "value": 7,
+          "mod": 0
+        },
+        "constitution": {
+          "value": 9,
+          "mod": 0
+        },
+        "dexterity": {
+          "value": 9,
+          "mod": 0
+        },
+        "strength": {
+          "value": 9,
+          "mod": 0
+        },
+        "intelligence": {
+          "value": 9,
+          "mod": 0
+        },
+        "perception": {
+          "value": 5,
+          "mod": 0
+        },
+        "power": {
+          "value": 10,
+          "mod": 0
+        },
+        "willPower": {
+          "value": 7,
+          "mod": 0
+        }
+      },
+      "secondaries": {
+        "lifePoints": {
+          "value": 150,
+          "max": 150
+        },
+        "initiative": {
+          "base": {
+            "value": 60
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "fatigue": {
+          "value": 6,
+          "max": 9
+        },
+        "movementType": {
+          "mod": {
+            "value": 1
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "movement": {
+          "maximum": {
+            "value": 0
+          },
+          "running": {
+            "value": 0
+          }
+        },
+        "resistances": {
+          "physical": {
+            "base": {
+              "value": 50
+            },
+            "final": {
+              "value": 0
+            }
+          },
+          "disease": {
+            "base": {
+              "value": 50
+            },
+            "final": {
+              "value": 0
+            }
+          },
+          "poison": {
+            "base": {
+              "value": 50
+            },
+            "final": {
+              "value": 0
+            }
+          },
+          "magic": {
+            "base": {
+              "value": 70
+            },
+            "final": {
+              "value": 0
+            }
+          },
+          "psychic": {
+            "base": {
+              "value": 45
+            },
+            "final": {
+              "value": 0
+            }
+          }
+        }
+      }
+    },
+    "secondaries": {
+      "athletics": {
+        "acrobatics": {
+          "base": {
+            "value": -25
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "athleticism": {
+          "base": {
+            "value": -10
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "ride": {
+          "base": {
+            "value": 45
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "swim": {
+          "base": {
+            "value": -25
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "climb": {
+          "base": {
+            "value": -25
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "jump": {
+          "base": {
+            "value": -30
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "piloting": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        }
+      },
+      "vigor": {
+        "composure": {
+          "base": {
+            "value": -25
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "featsOfStrength": {
+          "base": {
+            "value": -30
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "withstandPain": {
+          "base": {
+            "value": -25
+          },
+          "final": {
+            "value": 0
+          }
+        }
+      },
+      "perception": {
+        "notice": {
+          "base": {
+            "value": 70
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "search": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "track": {
+          "base": {
+            "value": -30
+          },
+          "final": {
+            "value": 0
+          }
+        }
+      },
+      "intellectual": {
+        "animals": {
+          "base": {
+            "value": -15
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "science": {
+          "base": {
+            "value": -200
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "law": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "herbalLore": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "history": {
+          "base": {
+            "value": -200
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "tactics": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "medicine": {
+          "base": {
+            "value": -200
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "memorize": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "navigation": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "occult": {
+          "base": {
+            "value": -10
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "appraisal": {
+          "base": {
+            "value": 45
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "magicAppraisal": {
+          "base": {
+            "value": 55
+          },
+          "final": {
+            "value": 0
+          }
+        }
+      },
+      "social": {
+        "style": {
+          "base": {
+            "value": -10
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "intimidate": {
+          "base": {
+            "value": -25
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "leadership": {
+          "base": {
+            "value": -10
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "persuasion": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "trading": {
+          "base": {
+            "value": 65
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "streetwise": {
+          "base": {
+            "value": 0
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "etiquette": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        }
+      },
+      "subterfuge": {
+        "lockPicking": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "disguise": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "hide": {
+          "base": {
+            "value": -40
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "theft": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "stealth": {
+          "base": {
+            "value": -25
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "trapLore": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "poisons": {
+          "base": {
+            "value": -200
+          },
+          "final": {
+            "value": 0
+          }
+        }
+      },
+      "creative": {
+        "art": {
+          "base": {
+            "value": -10
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "dance": {
+          "base": {
+            "value": -200
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "forging": {
+          "base": {
+            "value": -200
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "runes": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "alchemy": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "animism": {
+          "base": {
+            "value": -10
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "music": {
+          "base": {
+            "value": -200
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "sleightOfHand": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "ritualCalligraphy": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "jewelry": {
+          "base": {
+            "value": 55
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "tailoring": {
+          "base": {
+            "value": -20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "puppetMaking": {
+          "base": {
+            "value": -10
+          },
+          "final": {
+            "value": 0
+          }
+        }
+      },
+      "secondarySpecialSkills": []
+    },
+    "combat": {
+      "attack": {
+        "base": {
+          "value": 120
+        },
+        "final": {
+          "value": 0
+        }
+      },
+      "block": {
+        "base": {
+          "value": 150
+        },
+        "final": {
+          "value": 0
+        }
+      },
+      "dodge": {
+        "base": {
+          "value": 20
+        },
+        "final": {
+          "value": 0
+        }
+      },
+      "wearArmor": {
+        "value": 10
+      },
+      "totalArmor": {
+        "at": {
+          "cut": {
+            "value": 0
+          },
+          "impact": {
+            "value": 0
+          },
+          "thrust": {
+            "value": 0
+          },
+          "heat": {
+            "value": 0
+          },
+          "electricity": {
+            "value": 0
+          },
+          "cold": {
+            "value": 0
+          },
+          "energy": {
+            "value": 0
+          }
+        }
+      },
+      "combatSpecialSkills": [
+        {
+          "_id": "GpxoTeeBOViY0tQZVA4J8",
+          "type": "combatSpecialSkill",
+          "name": "Collar escarabajo del sol +10ATK +10Advertir (+30 intimidación persuación itzianos)",
+          "data": {}
+        }
+      ],
+      "combatTables": [],
+      "ammo": [],
+      "weapons": [],
+      "armors": []
+    },
+    "mystic": {
+      "act": {
+        "main": {
+          "base": {
+            "value": 65
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "alternative": {
+          "base": {
+            "value": 0
+          },
+          "final": {
+            "value": 0
+          }
+        }
+      },
+      "zeon": {
+        "accumulated": {
+          "value": 0
+        },
+        "value": 350,
+        "max": 870
+      },
+      "zeonRegeneration": {
+        "base": {
+          "value": 205
+        },
+        "final": {
+          "value": 0
+        }
+      },
+      "innateMagic": {
+        "main": {
+          "value": 20
+        },
+        "alternative": {
+          "value": 0
+        }
+      },
+      "magicProjection": {
+        "base": {
+          "value": 60
+        },
+        "final": {
+          "value": 0
+        },
+        "imbalance": {
+          "offensive": {
+            "base": {
+              "value": 90
+            },
+            "final": {
+              "value": 0
+            }
+          },
+          "defensive": {
+            "base": {
+              "value": 10
+            },
+            "final": {
+              "value": 0
+            }
+          }
+        }
+      },
+      "magicLevel": {
+        "spheres": {
+          "essence": {
+            "value": 0
+          },
+          "water": {
+            "value": 0
+          },
+          "earth": {
+            "value": 0
+          },
+          "creation": {
+            "value": 0
+          },
+          "darkness": {
+            "value": 0
+          },
+          "necromancy": {
+            "value": 0
+          },
+          "light": {
+            "value": 0
+          },
+          "destruction": {
+            "value": 50
+          },
+          "air": {
+            "value": 0
+          },
+          "fire": {
+            "value": 0
+          },
+          "illusion": {
+            "value": 0
+          }
+        },
+        "total": {
+          "value": 42
+        },
+        "used": {
+          "value": 37
+        }
+      },
+      "summoning": {
+        "summon": {
+          "base": {
+            "value": 20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "banish": {
+          "base": {
+            "value": 20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "bind": {
+          "base": {
+            "value": 20
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "control": {
+          "base": {
+            "value": 5
+          },
+          "final": {
+            "value": 0
+          }
+        }
+      },
+      "spells": [],
+      "spellMaintenances": [],
+      "selectedSpells": [
+        {
+          "_id": "UxtUjeNLQc3xp1FgsXa4A",
+          "type": "selectedSpell",
+          "name": "Lentitud",
+          "data": {
+            "cost": {
+              "value": 6
+            }
+          }
+        },
+        {
+          "_id": "3f9QKUXu8-402RAE-X4OE",
+          "type": "selectedSpell",
+          "name": "Escudo magnético",
+          "data": {
+            "cost": {
+              "value": 6
+            }
+          }
+        }
+      ],
+      "summons": [],
+      "metamagics": [
+        {
+          "_id": "pk6AT9uYac1iK9b_WfSUg",
+          "type": "metamagic",
+          "name": "C.E: el de la hora",
+          "data": {
+            "grade": {
+              "value": 5
+            }
+          }
+        },
+        {
+          "_id": "wR88zxAf2UY69aYcSmCFD",
+          "type": "metamagic",
+          "name": "Regeneración zeonica avanzada",
+          "data": {
+            "grade": {
+              "value": 5
+            }
+          }
+        },
+        {
+          "_id": "U4FLCBoMkJZ6ZfNuDfz4B",
+          "type": "metamagic",
+          "name": "Explotación de la energía física +25",
+          "data": {
+            "grade": {
+              "value": 5
+            }
+          }
+        }
+      ]
+    },
+    "domine": {
+      "kiSkills": [],
+      "nemesisSkills": [],
+      "arsMagnus": [],
+      "martialArts": [],
+      "creatures": [],
+      "specialSkills": [],
+      "techniques": [],
+      "seals": {
+        "minor": {
+          "earth": {
+            "isActive": {
+              "value": false
+            }
+          },
+          "metal": {
+            "isActive": {
+              "value": false
+            }
+          },
+          "wind": {
+            "isActive": {
+              "value": false
+            }
+          },
+          "water": {
+            "isActive": {
+              "value": false
+            }
+          },
+          "wood": {
+            "isActive": {
+              "value": false
+            }
+          }
+        },
+        "major": {
+          "earth": {
+            "isActive": {
+              "value": false
+            }
+          },
+          "metal": {
+            "isActive": {
+              "value": false
+            }
+          },
+          "wind": {
+            "isActive": {
+              "value": false
+            }
+          },
+          "water": {
+            "isActive": {
+              "value": false
+            }
+          },
+          "wood": {
+            "isActive": {
+              "value": false
+            }
+          }
+        }
+      },
+      "martialKnowledge": {
+        "used": {
+          "value": 0
+        },
+        "max": {
+          "value": 60
+        }
+      },
+      "kiAccumulation": {
+        "strength": {
+          "accumulated": {
+            "value": 0
+          },
+          "base": {
+            "value": 1
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "agility": {
+          "accumulated": {
+            "value": 0
+          },
+          "base": {
+            "value": 1
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "dexterity": {
+          "accumulated": {
+            "value": 0
+          },
+          "base": {
+            "value": 1
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "constitution": {
+          "accumulated": {
+            "value": 0
+          },
+          "base": {
+            "value": 1
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "willPower": {
+          "accumulated": {
+            "value": 0
+          },
+          "base": {
+            "value": 1
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "power": {
+          "accumulated": {
+            "value": 0
+          },
+          "base": {
+            "value": 2
+          },
+          "final": {
+            "value": 0
+          }
+        },
+        "generic": {
+          "value": 0,
+          "max": 55
+        }
+      }
+    },
+    "psychic": {
+      "psychicPotential": {
+        "base": {
+          "value": 0
+        },
+        "final": {
+          "value": 0
+        }
+      },
+      "psychicProjection": {
+        "base": {
+          "value": 10
+        },
+        "final": {
+          "value": 0
+        }
+      },
+      "psychicPoints": {
+        "value": 0,
+        "max": 1
+      },
+      "psychicPowers": [],
+      "psychicDisciplines": [],
+      "mentalPatterns": [],
+      "innatePsychicPower": {
+        "amount": {
+          "value": 0
+        }
+      },
+      "innatePsychicPowers": []
+    }
+  },
+  "token": {
+    "_id": "I4zAMxsfzkC9Qaoe",
+    "name": "Noximilian",
+    "displayName": 50,
+    "actorId": "lpF2Rj39e2D70ZmN",
+    "actorLink": true,
+    "actorData": {},
+    "img": "assets/tokens/Players/noxi.png",
+    "tint": null,
+    "width": 1,
+    "height": 1,
+    "scale": 1,
+    "mirrorX": false,
+    "mirrorY": false,
+    "x": null,
+    "y": null,
+    "elevation": null,
+    "lockRotation": false,
+    "rotation": 0,
+    "effects": [],
+    "alpha": 1,
+    "hidden": false,
+    "vision": true,
+    "dimSight": 5,
+    "brightSight": 0,
+    "dimLight": 0,
+    "brightLight": 0,
+    "sightAngle": 0,
+    "lightAngle": 0,
+    "lightColor": null,
+    "lightAlpha": 0.25,
+    "lightAnimation": {
+      "speed": 5,
+      "intensity": 5
+    },
+    "disposition": 1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "characteristics.secondaries.lifePoints"
+    },
+    "bar2": {
+      "attribute": "mystic.zeon"
+    },
+    "flags": {},
+    "tokenId": null,
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "PLdMFuGEx95eNv4R",
+      "name": "Don",
+      "type": "advantage",
+      "img": "icons/svg/item-bag.svg",
+      "data": {},
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "permission": {
+        "default": 0,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {}
+    },
+    {
+      "_id": "R0vrev3Lp79AWwKA",
+      "name": "+1 a característica: POD",
+      "type": "advantage",
+      "img": "icons/svg/item-bag.svg",
+      "data": {},
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "permission": {
+        "default": 0,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {}
+    },
+    {
+      "_id": "vtMqHoaILYl7qHJ9",
+      "name": "Extenuación mágica",
+      "type": "disadvantage",
+      "img": "icons/svg/item-bag.svg",
+      "data": {},
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {}
+    },
+    {
+      "_id": "cN1QrwGtA6k7YwL0",
+      "name": "Con. natural de Vía: Destruc.",
+      "type": "advantage",
+      "img": "icons/svg/item-bag.svg",
+      "data": {},
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "permission": {
+        "default": 0,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {}
+    },
+    {
+      "_id": "M8YHSflnpVWM5Zu0",
+      "name": "Rec. superior de magia (1)",
+      "type": "advantage",
+      "img": "icons/svg/item-bag.svg",
+      "data": {},
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "permission": {
+        "default": 0,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {}
+    },
+    {
+      "_id": "mKGbqxDKDZmNKy0I",
+      "name": "Naturaleza mágica (1)",
+      "type": "advantage",
+      "img": "icons/svg/item-bag.svg",
+      "data": {},
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "permission": {
+        "default": 0,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {}
+    },
+    {
+      "_id": "w2fkdNEZmTCt45RX",
+      "name": "Miopía",
+      "type": "disadvantage",
+      "img": "icons/svg/item-bag.svg",
+      "data": {},
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "permission": {
+        "default": 0,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {}
+    },
+    {
+      "_id": "aUfxtx7dohVUNpY0",
+      "name": "Obligación oral",
+      "type": "disadvantage",
+      "img": "icons/svg/item-bag.svg",
+      "data": {},
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "permission": {
+        "default": 0,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {}
+    },
+    {
+      "_id": "k3kaY1uv6Vob1scM",
+      "name": "Espada larga en punto",
+      "type": "weapon",
+      "img": "icons/weapons/swords/greatsword-crossguard-curved.webp",
+      "data": {
+        "special": {
+          "value": ""
+        },
+        "integrity": {
+          "value": 13,
+          "base": {
+            "value": 13
+          }
+        },
+        "breaking": {
+          "value": 3,
+          "base": {
+            "value": 3
+          }
+        },
+        "attack": {
+          "value": 0,
+          "special": {
+            "value": 0
+          }
+        },
+        "block": {
+          "value": 0,
+          "special": {
+            "value": 0
+          }
+        },
+        "damage": {
+          "base": {
+            "value": 50
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 50
+        },
+        "initiative": {
+          "base": {
+            "value": 0
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 0
+        },
+        "presence": {
+          "value": 0,
+          "base": {
+            "value": 25
+          }
+        },
+        "size": {
+          "value": "medium"
+        },
+        "strRequired": {
+          "oneHand": {
+            "value": 6,
+            "base": {
+              "value": 6
+            }
+          },
+          "twoHands": {
+            "value": 0
+          }
+        },
+        "quality": {
+          "value": 0
+        },
+        "oneOrTwoHanded": {
+          "value": ""
+        },
+        "knowledgeType": {
+          "value": "known"
+        },
+        "manageabilityType": {
+          "value": "one_hand"
+        },
+        "shotType": {
+          "value": "throw"
+        },
+        "isRanged": {
+          "value": false
+        },
+        "range": {
+          "base": {
+            "value": 0
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 0
+        },
+        "cadence": {
+          "value": ""
+        },
+        "reload": {
+          "value": 0
+        },
+        "weaponStrength": {
+          "value": 0
+        },
+        "critic": {
+          "primary": {
+            "value": "cut"
+          },
+          "secondary": {
+            "value": "-"
+          }
+        },
+        "weaponFue": {
+          "value": 0
+        },
+        "initiativeBase": {
+          "value": 0
+        },
+        "fueRequired": {
+          "value": ""
+        },
+        "isShield": {
+          "value": false
+        },
+        "sizeProportion": {
+          "value": "normal"
+        },
+        "equipped": {
+          "value": false
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.0Ky5zkWaxLlpImJw"
+        },
+        "cf": {
+          "id": "temp_ch5s71h6u7o",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "mbIG6KUIN1mWzr1b",
+      "name": "Escudo menos diez Medio",
+      "type": "weapon",
+      "img": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+      "data": {
+        "special": {
+          "value": "+20 a la parada, +10 a la esquiva, Ver"
+        },
+        "integrity": {
+          "value": 16,
+          "base": {
+            "value": 16
+          }
+        },
+        "breaking": {
+          "value": 0,
+          "base": {
+            "value": 0
+          }
+        },
+        "attack": {
+          "value": 0,
+          "special": {
+            "value": 0
+          }
+        },
+        "block": {
+          "value": 20,
+          "special": {
+            "value": 0
+          }
+        },
+        "damage": {
+          "base": {
+            "value": 20
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 20
+        },
+        "initiative": {
+          "base": {
+            "value": 0
+          },
+          "final": {
+            "value": 0
+          },
+          "value": -25
+        },
+        "presence": {
+          "value": 25,
+          "base": {
+            "value": 25
+          }
+        },
+        "size": {
+          "value": "medium"
+        },
+        "strRequired": {
+          "oneHand": {
+            "value": 7,
+            "base": {
+              "value": 7
+            }
+          },
+          "twoHands": {
+            "value": 0
+          }
+        },
+        "quality": {
+          "value": 0
+        },
+        "oneOrTwoHanded": {
+          "value": ""
+        },
+        "knowledgeType": {
+          "value": "known"
+        },
+        "manageabilityType": {
+          "value": "one_hand"
+        },
+        "shotType": {
+          "value": "throw"
+        },
+        "isRanged": {
+          "value": false
+        },
+        "range": {
+          "base": {
+            "value": 0
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 0
+        },
+        "cadence": {
+          "value": ""
+        },
+        "reload": {
+          "value": 0
+        },
+        "weaponStrength": {
+          "value": 0
+        },
+        "critic": {
+          "primary": {
+            "value": "impact"
+          },
+          "secondary": {
+            "value": "-"
+          }
+        },
+        "weaponFue": {
+          "value": 0
+        },
+        "initiativeBase": {
+          "value": -25
+        },
+        "fueRequired": {
+          "value": "7"
+        },
+        "isShield": {
+          "value": true
+        },
+        "sizeProportion": {
+          "value": "normal"
+        },
+        "equipped": {
+          "value": false
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 500000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "cf": {
+          "id": "temp_bki8ya9rhjj",
+          "color": "#000000"
+        },
+        "core": {
+          "sourceId": "Compendium.world.armas.5B31wpiTA99cDWxP"
+        }
+      }
+    },
+    {
+      "_id": "AzJZ9IjKfDgV9FgU",
+      "name": "Manto en el tiempo",
+      "type": "armor",
+      "img": "icons/equipment/back/cape-layered-simple-brown.webp",
+      "data": {
+        "cut": {
+          "value": 2,
+          "base": {
+            "value": 2
+          }
+        },
+        "pierce": {
+          "value": 0
+        },
+        "impact": {
+          "value": 1,
+          "base": {
+            "value": 1
+          }
+        },
+        "thrust": {
+          "value": 2,
+          "base": {
+            "value": 2
+          }
+        },
+        "heat": {
+          "value": 1,
+          "base": {
+            "value": 1
+          }
+        },
+        "electricity": {
+          "value": 2,
+          "base": {
+            "value": 2
+          }
+        },
+        "cold": {
+          "value": 2,
+          "base": {
+            "value": 2
+          }
+        },
+        "energy": {
+          "value": 0,
+          "base": {
+            "value": 0
+          }
+        },
+        "integrity": {
+          "value": 10,
+          "base": {
+            "value": 10
+          }
+        },
+        "presence": {
+          "value": 25,
+          "base": {
+            "value": 25
+          }
+        },
+        "wearArmorRequirement": {
+          "value": 10,
+          "base": {
+            "value": 10
+          }
+        },
+        "movementRestriction": {
+          "base": {
+            "value": 0
+          }
+        },
+        "naturalPenalty": {
+          "value": -10,
+          "base": {
+            "value": -10
+          }
+        },
+        "type": {
+          "value": "soft"
+        },
+        "localization": {
+          "value": "nightdress"
+        },
+        "isEnchanted": {
+          "value": false
+        },
+        "quality": {
+          "value": 0
+        },
+        "equipped": {
+          "value": true
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.BktzKDz02Ikzm0lF"
+        },
+        "cf": {
+          "id": "temp_3kz4aib1xi9",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "kuC5mnmGNoe0bcc0",
+      "name": "Ballesta",
+      "type": "weapon",
+      "img": "icons/weapons/crossbows/crossbow-simple-brown.webp",
+      "data": {
+        "special": {
+          "value": "1 o 2 manos, Ver"
+        },
+        "integrity": {
+          "value": 8,
+          "base": {
+            "value": 8
+          }
+        },
+        "breaking": {
+          "value": 0,
+          "base": {
+            "value": -2
+          }
+        },
+        "attack": {
+          "value": 0,
+          "special": {
+            "value": 0
+          }
+        },
+        "block": {
+          "value": 0,
+          "special": {
+            "value": 0
+          }
+        },
+        "damage": {
+          "base": {
+            "value": 0
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 0
+        },
+        "initiative": {
+          "base": {
+            "value": 0
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 0
+        },
+        "presence": {
+          "value": 0,
+          "base": {
+            "value": 20
+          }
+        },
+        "size": {
+          "value": "small"
+        },
+        "strRequired": {
+          "oneHand": {
+            "value": 8,
+            "base": {
+              "value": 8
+            }
+          },
+          "twoHands": {
+            "value": 4,
+            "base": {
+              "value": 4
+            }
+          }
+        },
+        "quality": {
+          "value": 0
+        },
+        "oneOrTwoHanded": {
+          "value": "one-handed"
+        },
+        "knowledgeType": {
+          "value": "known"
+        },
+        "manageabilityType": {
+          "value": "one_or_two_hands"
+        },
+        "shotType": {
+          "value": "shot"
+        },
+        "isRanged": {
+          "value": true
+        },
+        "range": {
+          "base": {
+            "value": 60
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 0
+        },
+        "cadence": {
+          "value": null
+        },
+        "reload": {
+          "value": 0,
+          "base": {
+            "value": 2
+          }
+        },
+        "weaponStrength": {
+          "value": 0,
+          "base": {
+            "value": 8
+          }
+        },
+        "critic": {
+          "primary": {
+            "value": "-"
+          },
+          "secondary": {
+            "value": "-"
+          }
+        },
+        "weaponFue": {
+          "value": 8
+        },
+        "initiativeBase": {
+          "value": 0
+        },
+        "fueRequired": {
+          "value": ""
+        },
+        "hasOwnStr": {
+          "value": true
+        },
+        "isShield": {
+          "value": false
+        },
+        "sizeProportion": {
+          "value": "normal"
+        },
+        "ammoId": "2a1XqbdieXiyePZ9",
+        "equipped": {
+          "value": false
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 300000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "cf": {
+          "id": "temp_hi9ttqf7qse",
+          "color": "#000000"
+        },
+        "core": {
+          "sourceId": "Compendium.world.armas.k0A1IZ4K41lDIAr1"
+        }
+      }
+    },
+    {
+      "_id": "7typCfuxVqND39kN",
+      "name": "Cerbatana",
+      "type": "weapon",
+      "img": "icons/tools/instruments/pipe-flute-brown.webp",
+      "data": {
+        "special": {
+          "value": "No aplica fuerza al daño"
+        },
+        "integrity": {
+          "value": 3,
+          "base": {
+            "value": 3
+          }
+        },
+        "breaking": {
+          "value": -4,
+          "base": {
+            "value": -3
+          }
+        },
+        "attack": {
+          "value": 0,
+          "special": {
+            "value": 0
+          }
+        },
+        "block": {
+          "value": 0,
+          "special": {
+            "value": 0
+          }
+        },
+        "damage": {
+          "base": {
+            "value": 0
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 5
+        },
+        "initiative": {
+          "base": {
+            "value": -10
+          },
+          "final": {
+            "value": 0
+          },
+          "value": -10
+        },
+        "presence": {
+          "value": 0,
+          "base": {
+            "value": 15
+          }
+        },
+        "size": {
+          "value": "small"
+        },
+        "strRequired": {
+          "oneHand": {
+            "value": 0
+          },
+          "twoHands": {
+            "value": 4,
+            "base": {
+              "value": 4
+            }
+          }
+        },
+        "quality": {
+          "value": 0
+        },
+        "oneOrTwoHanded": {
+          "value": ""
+        },
+        "knowledgeType": {
+          "value": "known"
+        },
+        "manageabilityType": {
+          "value": "two_hands"
+        },
+        "shotType": {
+          "value": "shot"
+        },
+        "isRanged": {
+          "value": true
+        },
+        "range": {
+          "base": {
+            "value": 50
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 0
+        },
+        "cadence": {
+          "value": null
+        },
+        "reload": {
+          "value": 0,
+          "base": {
+            "value": 1
+          }
+        },
+        "weaponStrength": {
+          "value": 0
+        },
+        "critic": {
+          "primary": {
+            "value": "-"
+          },
+          "secondary": {
+            "value": "-"
+          }
+        },
+        "weaponFue": {
+          "value": 0
+        },
+        "initiativeBase": {
+          "value": 0
+        },
+        "fueRequired": {
+          "value": ""
+        },
+        "hasOwnStr": {
+          "value": false
+        },
+        "isShield": {
+          "value": false
+        },
+        "sizeProportion": {
+          "value": "normal"
+        },
+        "equipped": {
+          "value": false
+        },
+        "ammoId": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "cf": {
+          "id": "temp_hi9ttqf7qse",
+          "color": "#000000"
+        },
+        "core": {
+          "sourceId": "Compendium.world.armas.AYSqJ1lU3hi66fU4"
+        }
+      }
+    },
+    {
+      "_id": "ldGnBwFnqsG29Bqp",
+      "name": "10 - Destrucción Menor",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 10
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "attack"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 6
+            },
+            "zeon": {
+              "value": 50
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Presencia máxima 20."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 9
+            },
+            "zeon": {
+              "value": 90
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Presencia máxima 40."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 11
+            },
+            "zeon": {
+              "value": 140
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Presencia máxima 60."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 13
+            },
+            "zeon": {
+              "value": 180
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Presencia máxima 80."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_agxi4tb7fbf",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "xRDxZRSwFLvmMQ4J",
+      "name": "2 - Fragilidad",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 2
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "effect"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 5
+            },
+            "zeon": {
+              "value": 30
+            },
+            "maintenanceCost": {
+              "value": "5"
+            },
+            "description": {
+              "value": "-2 a su entereza / Presencia máxima afectable 30."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 8
+            },
+            "zeon": {
+              "value": 60
+            },
+            "maintenanceCost": {
+              "value": "10"
+            },
+            "description": {
+              "value": "-4 a su entereza / Presencia máxima afectable 60."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 10
+            },
+            "zeon": {
+              "value": 120
+            },
+            "maintenanceCost": {
+              "value": "15"
+            },
+            "description": {
+              "value": "-8 a su entereza / Presencia máxima afectable 90."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 150
+            },
+            "maintenanceCost": {
+              "value": "15"
+            },
+            "description": {
+              "value": "-12 a su entereza / Presencia máxima afectable 120."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 100000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_agxi4tb7fbf",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "snRSEgv3uNBisj50",
+      "name": "6 - Desmantelar",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 6
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "effect"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 5
+            },
+            "zeon": {
+              "value": 40
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Presencia máxima 20."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 8
+            },
+            "zeon": {
+              "value": 80
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Presencia máxima 40."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 10
+            },
+            "zeon": {
+              "value": 120
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Presencia máxima 60."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 150
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Presencia máxima 80."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 150000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_agxi4tb7fbf",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "8b5PFdHl44q3X77j",
+      "name": "8 - Destruir Intensidades",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 8
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "effect"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 5
+            },
+            "zeon": {
+              "value": 40
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "1 intensidad / 100 RM."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 8
+            },
+            "zeon": {
+              "value": 80
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "5 intensidades / 120 RM."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 10
+            },
+            "zeon": {
+              "value": 120
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "10 intensidades / 140 RM."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 150
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "15 intensidades / 160 RM."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_agxi4tb7fbf",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "9iCVgyfN6CGCac1K",
+      "name": "12 - Esfera de Destrucción",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 12
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "attack"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 5
+            },
+            "zeon": {
+              "value": 30
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Realiza un ataque."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 8
+            },
+            "zeon": {
+              "value": 60
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Realiza tres ataques."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 10
+            },
+            "zeon": {
+              "value": 100
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Realiza cinco ataques."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 13
+            },
+            "zeon": {
+              "value": 150
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Realiza siete ataques."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2100000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_q8fe0fp5suf",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "eHf69TRAYksQvgcp",
+      "name": "16 - Incrementar Debilidad",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 16
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "animatic"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": true
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 6
+            },
+            "zeon": {
+              "value": 50
+            },
+            "maintenanceCost": {
+              "value": "5"
+            },
+            "description": {
+              "value": "120 RM."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 8
+            },
+            "zeon": {
+              "value": 80
+            },
+            "maintenanceCost": {
+              "value": "10"
+            },
+            "description": {
+              "value": "140 RM."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 10
+            },
+            "zeon": {
+              "value": 120
+            },
+            "maintenanceCost": {
+              "value": "15"
+            },
+            "description": {
+              "value": "160 RM."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 150
+            },
+            "maintenanceCost": {
+              "value": "15"
+            },
+            "description": {
+              "value": "200 RM."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 600000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_q8fe0fp5suf",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "wnP82Eaopcb0dMUg",
+      "name": "18 - Destrucción de Magia",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 18
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "effect"
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 6
+            },
+            "zeon": {
+              "value": 60
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Valor zeónico 50."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 9
+            },
+            "zeon": {
+              "value": 150
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Valor zeónico 120."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 300
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Valor zeónico 200."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 16
+            },
+            "zeon": {
+              "value": 500
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Valor zeónico 350."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 700000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_q8fe0fp5suf",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "zj5vgYvLmxUBOfNX",
+      "name": "20 - Agravar Daño",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 20
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "effect"
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 6
+            },
+            "zeon": {
+              "value": 60
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "+30 al daño."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 9
+            },
+            "zeon": {
+              "value": 100
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "+50 al daño."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 150
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "+90 al daño."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 15
+            },
+            "zeon": {
+              "value": 220
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "+120 al daño."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 800000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_q8fe0fp5suf",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "KkOY5s6d5sOtMcWl",
+      "name": "22 - Destrucción de Matrices",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 22
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "effect"
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 6
+            },
+            "zeon": {
+              "value": 80
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Dificultad Media (80)."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 9
+            },
+            "zeon": {
+              "value": 140
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Dificultad Muy Difícil (140)."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 240
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Dificultad Casi Imposible (240)."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 16
+            },
+            "zeon": {
+              "value": 320
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Dificultad Inhumano (320)."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 900000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_9c1jtbp3s3s",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "OgSnHRdhtk6octCx",
+      "name": "26 - Herir",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 26
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "animatic"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 6
+            },
+            "zeon": {
+              "value": 80
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "20% de Puntos de Vida / 120 RM."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 9
+            },
+            "zeon": {
+              "value": 120
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "40% de Puntos de Vida / 140 RM."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 180
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "60% de Puntos de Vida / 160 RM."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 15
+            },
+            "zeon": {
+              "value": 300
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "80% de Puntos de Vida / 200 RM."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1000000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_9c1jtbp3s3s",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "efOJXvBHW9O1DZZI",
+      "name": "28 - Destrucción de Ki",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 28
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "animatic"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 6
+            },
+            "zeon": {
+              "value": 80
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "140 RM."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 9
+            },
+            "zeon": {
+              "value": 140
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "160 RM."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 220
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "180 RM."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 15
+            },
+            "zeon": {
+              "value": 300
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "220 RM."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1100000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_9c1jtbp3s3s",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "3GQV1fTnlkVrw8CU",
+      "name": "30 - Producir Daño",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 30
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "animatic"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 6
+            },
+            "zeon": {
+              "value": 80
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "50 puntos de daño / 120 RM."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 9
+            },
+            "zeon": {
+              "value": 120
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "100 puntos de daño / 140 RM."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 180
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "180 puntos de daño / 160 RM."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 15
+            },
+            "zeon": {
+              "value": 300
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "250 puntos de daño / 200 RM."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 2200000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_9c1jtbp3s3s",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "CtrZJUy2QqTbuxSU",
+      "name": "36 - Descarga",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 36
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "attack"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 6
+            },
+            "zeon": {
+              "value": 80
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Daño 100."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 9
+            },
+            "zeon": {
+              "value": 140
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Daño 150."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 220
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Daño 200."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 15
+            },
+            "zeon": {
+              "value": 300
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Daño 250."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1300000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_8ltt6votpao",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "TOv7tKgpwyl5Zrto",
+      "name": "40 - Destruir Resistencias",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 40
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "animatic"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 7
+            },
+            "zeon": {
+              "value": 80
+            },
+            "maintenanceCost": {
+              "value": "10"
+            },
+            "description": {
+              "value": "RM 120."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 9
+            },
+            "zeon": {
+              "value": 160
+            },
+            "maintenanceCost": {
+              "value": "20"
+            },
+            "description": {
+              "value": "RM 160."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 240
+            },
+            "maintenanceCost": {
+              "value": "25"
+            },
+            "description": {
+              "value": "RM 200."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 15
+            },
+            "zeon": {
+              "value": 300
+            },
+            "maintenanceCost": {
+              "value": "30"
+            },
+            "description": {
+              "value": "RM 240."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1400000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_8ltt6votpao",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "3vJql0tVzLN7HOn3",
+      "name": "42 - Deshacer Estados",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 42
+        },
+        "via": {
+          "value": "destruction"
+        },
+        "spellType": {
+          "value": "effect"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 7
+            },
+            "zeon": {
+              "value": 120
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "RM 120 / Presencia máxima 120."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 10
+            },
+            "zeon": {
+              "value": 180
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "RM 140 / Presencia máxima 200."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 240
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "RM 160 / Presencia máxima 300."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 15
+            },
+            "zeon": {
+              "value": 300
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "RM 200 / Presencia máxima 400."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1500000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.kVrwySj9fUqfh24L"
+        },
+        "cf": {
+          "id": "temp_l68nd1ocduj",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "mtykbeYHQldd4aWr",
+      "name": "14 - Aceleración Temporal",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 14
+        },
+        "via": {
+          "value": "time"
+        },
+        "spellType": {
+          "value": "effect"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 7
+            },
+            "zeon": {
+              "value": 100
+            },
+            "maintenanceCost": {
+              "value": "10"
+            },
+            "description": {
+              "value": "+1 Tipo de Movimiento / +20 al Turno / +10 a Toda Acción."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 10
+            },
+            "zeon": {
+              "value": 140
+            },
+            "maintenanceCost": {
+              "value": "15"
+            },
+            "description": {
+              "value": "+2 Tipos de Movimientos / +30 al Turno / +15 a Toda Acción."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 180
+            },
+            "maintenanceCost": {
+              "value": "20"
+            },
+            "description": {
+              "value": "+2 Tipos de Movimientos / +40 al Turno / +20 a Toda Acción."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 15
+            },
+            "zeon": {
+              "value": 240
+            },
+            "maintenanceCost": {
+              "value": "25"
+            },
+            "description": {
+              "value": "+3 Tipos de Movimientos / +50 al Turno / +25 a Toda Acción."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1600000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.iQi9pEl1y9CZ1kc3"
+        },
+        "cf": {
+          "id": "temp_nyv9otzy5l",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "c1uzr93H6BZEmK3b",
+      "name": "24 - Lentitud Temporal",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 24
+        },
+        "via": {
+          "value": "time"
+        },
+        "spellType": {
+          "value": "effect"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 7
+            },
+            "zeon": {
+              "value": 100
+            },
+            "maintenanceCost": {
+              "value": "10"
+            },
+            "description": {
+              "value": "-2 Tipos de Movimiento / -40 al Turno / 10 metros de radio / 100 RM."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 10
+            },
+            "zeon": {
+              "value": 150
+            },
+            "maintenanceCost": {
+              "value": "15"
+            },
+            "description": {
+              "value": "-4 Tipos de Movimiento / -60 al Turno / -10 a Toda Acción / 25 metros de radio / 120 RM."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 200
+            },
+            "maintenanceCost": {
+              "value": "20"
+            },
+            "description": {
+              "value": "-6 Tipos de Movimiento / -80 al Turno / -20 a Toda Acción / 50 metros de radio / 140 RM."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 15
+            },
+            "zeon": {
+              "value": 250
+            },
+            "maintenanceCost": {
+              "value": "25"
+            },
+            "description": {
+              "value": "-8 Tipos de Movimiento / -100 al Turno / -30 a Toda Acción / 100 metros de radio / 160 RM."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1700000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.iQi9pEl1y9CZ1kc3"
+        },
+        "cf": {
+          "id": "temp_nyv9otzy5l",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "4Ss1E41PhGRhK8rm",
+      "name": "34 - Estancar el Tiempo",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 34
+        },
+        "via": {
+          "value": "time"
+        },
+        "spellType": {
+          "value": "automatic"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 8
+            },
+            "zeon": {
+              "value": 150
+            },
+            "maintenanceCost": {
+              "value": "15"
+            },
+            "description": {
+              "value": "5 metros."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 11
+            },
+            "zeon": {
+              "value": 200
+            },
+            "maintenanceCost": {
+              "value": "20"
+            },
+            "description": {
+              "value": "10 metros."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 13
+            },
+            "zeon": {
+              "value": 280
+            },
+            "maintenanceCost": {
+              "value": "30"
+            },
+            "description": {
+              "value": "25 metros."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 15
+            },
+            "zeon": {
+              "value": 380
+            },
+            "maintenanceCost": {
+              "value": "40"
+            },
+            "description": {
+              "value": "50 metros."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1800000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.iQi9pEl1y9CZ1kc3"
+        },
+        "cf": {
+          "id": "temp_nyv9otzy5l",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "YbwwMTSj0Kv8QMlv",
+      "name": "4 - Conocimiento Temporal",
+      "type": "spell",
+      "img": "icons/svg/item-bag.svg",
+      "data": {
+        "level": {
+          "value": 4
+        },
+        "via": {
+          "value": "time"
+        },
+        "spellType": {
+          "value": "effect"
+        },
+        "actionType": {
+          "value": "active"
+        },
+        "hasDailyMaintenance": {
+          "value": false
+        },
+        "grades": {
+          "base": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 5
+            },
+            "zeon": {
+              "value": 30
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Permite percibir sobrenaturalmente la hora y la fecha."
+            }
+          },
+          "intermediate": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 7
+            },
+            "zeon": {
+              "value": 50
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "Siente las milésimas de segundo, y toda alternación del fluir del tiempo."
+            }
+          },
+          "advanced": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 10
+            },
+            "zeon": {
+              "value": 70
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "El personaje puede fijar una alarma, que sonará cuando lo desee."
+            }
+          },
+          "arcane": {
+            "name": {
+              "value": ""
+            },
+            "intRequired": {
+              "value": 12
+            },
+            "zeon": {
+              "value": 90
+            },
+            "maintenanceCost": {
+              "value": "No"
+            },
+            "description": {
+              "value": "El lanzador puede calcular el tiempo que va a tardar algo en concluir."
+            }
+          }
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 1900000,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.iQi9pEl1y9CZ1kc3"
+        },
+        "cf": {
+          "id": "temp_nyv9otzy5l",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "CGRncMHnnOithkTP",
+      "name": "Desarmado",
+      "type": "weapon",
+      "img": "icons/skills/melee/unarmed-punch-fist.webp",
+      "data": {
+        "special": {
+          "value": "Precisa"
+        },
+        "integrity": {
+          "value": null,
+          "base": {
+            "value": null
+          }
+        },
+        "breaking": {
+          "value": -2,
+          "base": {
+            "value": -2
+          }
+        },
+        "attack": {
+          "value": 0,
+          "special": {
+            "value": 0
+          }
+        },
+        "block": {
+          "value": 0,
+          "special": {
+            "value": 0
+          }
+        },
+        "damage": {
+          "base": {
+            "value": 10
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 10
+        },
+        "initiative": {
+          "base": {
+            "value": 20
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 20
+        },
+        "presence": {
+          "value": 0,
+          "base": {
+            "value": null
+          }
+        },
+        "size": {
+          "value": "small"
+        },
+        "strRequired": {
+          "oneHand": {
+            "value": 0,
+            "base": {
+              "value": 0
+            }
+          },
+          "twoHands": {
+            "value": 0
+          }
+        },
+        "quality": {
+          "value": 0
+        },
+        "oneOrTwoHanded": {
+          "value": ""
+        },
+        "knowledgeType": {
+          "value": "known"
+        },
+        "manageabilityType": {
+          "value": "one_hand"
+        },
+        "shotType": {
+          "value": "throw"
+        },
+        "isRanged": {
+          "value": false
+        },
+        "range": {
+          "base": {
+            "value": 0
+          },
+          "final": {
+            "value": 0
+          },
+          "value": 0
+        },
+        "cadence": {
+          "value": ""
+        },
+        "reload": {
+          "value": 0
+        },
+        "weaponStrength": {
+          "value": 0
+        },
+        "critic": {
+          "primary": {
+            "value": "impact"
+          },
+          "secondary": {
+            "value": "-"
+          }
+        },
+        "weaponFue": {
+          "value": 0
+        },
+        "initiativeBase": {
+          "value": 0
+        },
+        "fueRequired": {
+          "value": ""
+        },
+        "isShield": {
+          "value": false
+        },
+        "sizeProportion": {
+          "value": "normal"
+        },
+        "equipped": {
+          "value": true
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "N3PdL98kPVIiW2Kz": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.I3FT8BlayCdnuxM0"
+        },
+        "cf": {
+          "id": "temp_kqknx06da7f",
+          "color": "#000000"
+        }
+      }
+    },
+    {
+      "_id": "2a1XqbdieXiyePZ9",
+      "name": "Saeta",
+      "type": "ammo",
+      "img": "icons/weapons/ammunition/arrow-simple-grey.webp",
+      "data": {
+        "amount": {
+          "value": 0
+        },
+        "damage": {
+          "value": 0,
+          "base": {
+            "value": 40
+          }
+        },
+        "critic": {
+          "value": "thrust"
+        },
+        "integrity": {
+          "value": 0,
+          "base": {
+            "value": 3
+          }
+        },
+        "breaking": {
+          "value": 0,
+          "base": {
+            "value": 0
+          }
+        },
+        "presence": {
+          "value": 0,
+          "base": {
+            "value": 15
+          }
+        },
+        "special": {
+          "value": ""
+        },
+        "quality": {
+          "value": -10
+        }
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "permission": {
+        "default": 0,
+        "UMfJDL1rZj83Uanc": 3,
+        "iE2gQzbH7wp76IZ9": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.lF2457vqJzCxgI0H"
+        },
+        "cf": {
+          "id": "temp_6kkmmy2xtfo",
+          "color": "#000000"
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "sort": 0,
+  "flags": {
+    "exportSource": {
+      "world": "el-fin",
+      "system": "animabf",
+      "coreVersion": "0.8.9",
+      "systemVersion": "1.14.0"
+    }
+  }
+}

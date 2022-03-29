@@ -90,36 +90,36 @@ export type ActorData = {
     seals: {
       minor: {
         earth: {
-          isActive: boolean;
+          isActive: FoundryBooleanField;
         };
         metal: {
-          isActive: boolean;
+          isActive: FoundryBooleanField;
         };
         wind: {
-          isActive: boolean;
+          isActive: FoundryBooleanField;
         };
         water: {
-          isActive: boolean;
+          isActive: FoundryBooleanField;
         };
         wood: {
-          isActive: boolean;
+          isActive: FoundryBooleanField;
         };
       };
       major: {
         earth: {
-          isActive: boolean;
+          isActive: FoundryBooleanField;
         };
         metal: {
-          isActive: boolean;
+          isActive: FoundryBooleanField;
         };
         wind: {
-          isActive: boolean;
+          isActive: FoundryBooleanField;
         };
         water: {
-          isActive: boolean;
+          isActive: FoundryBooleanField;
         };
         wood: {
-          isActive: boolean;
+          isActive: FoundryBooleanField;
         };
       };
     };
@@ -155,4 +155,9 @@ export type ActorData = {
     };
     psychicPoints: FoundryMaximumField;
   };
+};
+
+export type Actor = {
+  name: string;
+  data: ActorData;
 };

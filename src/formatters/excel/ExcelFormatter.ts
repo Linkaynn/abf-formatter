@@ -2,7 +2,7 @@ import * as XLSX from "xlsx";
 import { PrimaryCharacteristics } from "../../types/actor/parts/PrimaryCharacteristics";
 import { WorkBook } from "xlsx";
 import { SecondaryCharacteristics } from "../../types/actor/parts/SecondaryCharacteristics";
-import { ActorData } from "../../types/actor/ActorData";
+import { Actor, ActorData } from "../../types/actor/Actor";
 import { AthleticsSkills } from "../../types/actor/parts/AthleticsSkills";
 import { SocialSkills } from "../../types/actor/parts/SocialSkills";
 import { PerceptionSkills } from "../../types/actor/parts/PerceptionSkills";
@@ -60,14 +60,14 @@ export class ExcelFormatter {
 
     return {
       fatigue: { max: sheet["N16"].v },
-      initiative: { base: sheet["D31"].v },
+      initiative: { base: { value: sheet["D31"].v } },
       lifePoints: { max: sheet["N11"].v },
       resistances: {
-        physical: { base: sheet["J58"].v },
-        disease: { base: sheet["J59"].v },
-        poison: { base: sheet["J60"].v },
-        magic: { base: sheet["J61"].v },
-        psychic: { base: sheet["J62"].v },
+        physical: { base: { value: sheet["J58"].v } },
+        disease: { base: { value: sheet["J59"].v } },
+        poison: { base: { value: sheet["J60"].v } },
+        magic: { base: { value: sheet["J61"].v } },
+        psychic: { base: { value: sheet["J62"].v } },
       },
     };
   }
@@ -195,7 +195,7 @@ export class ExcelFormatter {
 
     return {
       aspect: this.getAspect(),
-      presence: { value: sheetPrincipal["J57"].v },
+      presence: { base: { value: sheetPrincipal["J57"].v } },
       money: {
         gold: { value: sheetGeneral["Y59"].v },
         silver: { value: sheetGeneral["Y61"].v },
@@ -213,12 +213,12 @@ export class ExcelFormatter {
           value: sheetPDs["AA22"].v,
         },
       },
-      dodge: {
+      block: {
         base: {
           value: sheetPDs["AA23"].v,
         },
       },
-      block: {
+      dodge: {
         base: {
           value: sheetPDs["AA24"].v,
         },
@@ -265,18 +265,18 @@ export class ExcelFormatter {
     return {
       seals: {
         minor: {
-          earth: { isActive: sheet["X11"] !== undefined },
-          metal: { isActive: sheet["X12"] !== undefined },
-          wind: { isActive: sheet["X13"] !== undefined },
-          water: { isActive: sheet["X14"] !== undefined },
-          wood: { isActive: sheet["X15"] !== undefined },
+          earth: { isActive: { value: sheet["X11"] !== undefined } },
+          metal: { isActive: { value: sheet["X12"] !== undefined } },
+          wind: { isActive: { value: sheet["X13"] !== undefined } },
+          water: { isActive: { value: sheet["X14"] !== undefined } },
+          wood: { isActive: { value: sheet["X15"] !== undefined } },
         },
         major: {
-          earth: { isActive: sheet["Y11"] !== undefined },
-          metal: { isActive: sheet["Y12"] !== undefined },
-          wind: { isActive: sheet["Y13"] !== undefined },
-          water: { isActive: sheet["Y14"] !== undefined },
-          wood: { isActive: sheet["Y15"] !== undefined },
+          earth: { isActive: { value: sheet["Y11"] !== undefined } },
+          metal: { isActive: { value: sheet["Y12"] !== undefined } },
+          wind: { isActive: { value: sheet["Y13"] !== undefined } },
+          water: { isActive: { value: sheet["Y14"] !== undefined } },
+          wood: { isActive: { value: sheet["Y15"] !== undefined } },
         },
       },
       kiAccumulation: {
@@ -304,6 +304,35 @@ export class ExcelFormatter {
         max: sheetPDs["AA108"].v,
       },
       psychicProjection: { base: { value: sheetPDs["AA109"].v } },
+    };
+  }
+
+  getActor(): Actor {
+    const sheet = this.getSheet(SheetNames.General);
+
+    return {
+      name: sheet["F22"].v,
+      data: {
+        version: 1,
+        general: this.getGeneralData(),
+        characteristics: {
+          primaries: this.getPrimaryCharacteristics(),
+          secondaries: this.getSecondaryCharacteristics(),
+        },
+        secondaries: {
+          athletics: this.getAthleticSkills(),
+          creative: this.getCreativeSkills(),
+          vigor: this.getVigorSkills(),
+          social: this.getSocialSkills(),
+          perception: this.getPerceptionSkills(),
+          subterfuge: this.getSubterfugeSkills(),
+          intellectual: this.getIntellectualSkills(),
+        },
+        combat: this.getCombatData(),
+        mystic: this.getMysticData(),
+        domine: this.getDomineData(),
+        psychic: this.getPsychicData(),
+      },
     };
   }
 }

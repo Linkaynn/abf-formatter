@@ -2,7 +2,7 @@ import { FoundryNumericField } from "../fields/FoundryNumericField";
 import { AspectData } from "./AspectData";
 
 export type ActorDataGeneral = {
-  presence: FoundryNumericField;
+  presence: { base: FoundryNumericField };
   aspect: AspectData;
   money: {
     cooper: FoundryNumericField;

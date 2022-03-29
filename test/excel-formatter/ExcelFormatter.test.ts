@@ -27,13 +27,13 @@ describe("Excel formatter must", () => {
     const v = formatter.getSecondaryCharacteristics();
 
     expect(v.fatigue.max).toBe(9);
-    expect(v.initiative.base).toBe(60);
+    expect(v.initiative.base.value).toBe(60);
     expect(v.lifePoints.max).toBe(150);
-    expect(v.resistances.physical.base).toBe(50);
-    expect(v.resistances.disease.base).toBe(50);
-    expect(v.resistances.poison.base).toBe(50);
-    expect(v.resistances.magic.base).toBe(70);
-    expect(v.resistances.psychic.base).toBe(45);
+    expect(v.resistances.physical.base.value).toBe(50);
+    expect(v.resistances.disease.base.value).toBe(50);
+    expect(v.resistances.poison.base.value).toBe(50);
+    expect(v.resistances.magic.base.value).toBe(70);
+    expect(v.resistances.psychic.base.value).toBe(45);
   });
 
   it("format aspect", () => {
@@ -53,7 +53,7 @@ describe("Excel formatter must", () => {
   it("format general data", () => {
     const v = formatter.getGeneralData();
 
-    expect(v.presence.value).toBe(40);
+    expect(v.presence.base.value).toBe(40);
     expect(v.money.gold.value).toBe(5);
     expect(v.money.silver.value).toBe(131);
     expect(v.money.cooper.value).toBe(8);
@@ -149,8 +149,8 @@ describe("Excel formatter must", () => {
     const v = formatter.getCombatData();
 
     expect(v.attack.base.value).toBe(120);
-    expect(v.dodge.base.value).toBe(150);
-    expect(v.block.base.value).toBe(20);
+    expect(v.dodge.base.value).toBe(20);
+    expect(v.block.base.value).toBe(150);
     expect(v.wearArmor.value).toBe(10);
   });
 
@@ -178,17 +178,17 @@ describe("Excel formatter must", () => {
   it("format domine data", () => {
     const v = formatter.getDomineData();
 
-    expect(v.seals.minor.earth.isActive).toBe(false);
-    expect(v.seals.minor.metal.isActive).toBe(false);
-    expect(v.seals.minor.wind.isActive).toBe(false);
-    expect(v.seals.minor.water.isActive).toBe(false);
-    expect(v.seals.minor.wood.isActive).toBe(false);
+    expect(v.seals.minor.earth.isActive.value).toBe(false);
+    expect(v.seals.minor.metal.isActive.value).toBe(false);
+    expect(v.seals.minor.wind.isActive.value).toBe(false);
+    expect(v.seals.minor.water.isActive.value).toBe(false);
+    expect(v.seals.minor.wood.isActive.value).toBe(false);
 
-    expect(v.seals.major.earth.isActive).toBe(false);
-    expect(v.seals.major.metal.isActive).toBe(false);
-    expect(v.seals.major.wind.isActive).toBe(false);
-    expect(v.seals.major.water.isActive).toBe(false);
-    expect(v.seals.major.wood.isActive).toBe(false);
+    expect(v.seals.major.earth.isActive.value).toBe(false);
+    expect(v.seals.major.metal.isActive.value).toBe(false);
+    expect(v.seals.major.wind.isActive.value).toBe(false);
+    expect(v.seals.major.water.isActive.value).toBe(false);
+    expect(v.seals.major.wood.isActive.value).toBe(false);
 
     expect(v.kiAccumulation.agility.base.value).toBe(1);
     expect(v.kiAccumulation.constitution.base.value).toBe(1);
@@ -204,5 +204,9 @@ describe("Excel formatter must", () => {
 
     expect(v.psychicPoints.max).toBe(1);
     expect(v.psychicProjection.base.value).toBe(10);
+  });
+
+  it("format actor without errors", () => {
+    formatter.getActor();
   });
 });
