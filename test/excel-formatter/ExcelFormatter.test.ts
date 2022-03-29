@@ -153,4 +153,20 @@ describe("Excel formatter must", () => {
     expect(v.block.base.value).toBe(20);
     expect(v.wearArmor.value).toBe(10);
   });
+
+  it("format mystic data", () => {
+    const v = formatter.getMysticData();
+
+    expect(v.act.main.base.value).toBe(65);
+    expect(v.zeon.max).toBe(870);
+    expect(v.innateMagic.main.value).toBe(20);
+    expect(v.summoning.summon.base.value).toBe(20);
+    expect(v.summoning.control.base.value).toBe(5);
+    expect(v.summoning.bind.base.value).toBe(20);
+    expect(v.summoning.banish.base.value).toBe(20);
+    expect(v.magicProjection.base.value).toBe(60);
+    expect(v.magicProjection.imbalance.offensive.base.value).toBe(90);
+    expect(v.magicProjection.imbalance.defensive.base.value).toBe(10);
+    expect(v.zeonRegeneration.base.value).toBe(205);
+  });
 });

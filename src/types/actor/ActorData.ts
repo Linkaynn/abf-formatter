@@ -42,15 +42,12 @@ export type ActorData = {
   combat: {
     attack: {
       base: FoundryNumericField;
-      final?: FoundryNumericField;
     };
     block: {
       base: FoundryNumericField;
-      final?: FoundryNumericField;
     };
     dodge: {
       base: FoundryNumericField;
-      final?: FoundryNumericField;
     };
     wearArmor: FoundryNumericField;
   };
@@ -59,80 +56,42 @@ export type ActorData = {
     act: {
       main: {
         base: FoundryNumericField;
-        final: FoundryNumericField;
-      };
-      alternative: {
-        base: FoundryNumericField;
-        final: FoundryNumericField;
       };
     };
     zeon: {
-      accumulated: number;
-      value: number;
       max: number;
     };
     zeonRegeneration: {
       base: FoundryNumericField;
-      final: FoundryNumericField;
     };
     innateMagic: {
       main: FoundryNumericField;
-      alternative: FoundryNumericField;
     };
     magicProjection: {
       base: FoundryNumericField;
-      final: FoundryNumericField;
       imbalance: {
         offensive: {
           base: FoundryNumericField;
-          final: FoundryNumericField;
         };
         defensive: {
           base: FoundryNumericField;
-          final: FoundryNumericField;
         };
       };
-    };
-    magicLevel: {
-      spheres: {
-        essence: FoundryNumericField;
-        water: FoundryNumericField;
-        earth: FoundryNumericField;
-        creation: FoundryNumericField;
-        darkness: FoundryNumericField;
-        necromancy: FoundryNumericField;
-        light: FoundryNumericField;
-        destruction: FoundryNumericField;
-        air: FoundryNumericField;
-        fire: FoundryNumericField;
-        illusion: FoundryNumericField;
-      };
-      total: FoundryNumericField;
-      used: FoundryNumericField;
     };
     summoning: {
       summon: {
         base: FoundryNumericField;
-        final: FoundryNumericField;
       };
       banish: {
         base: FoundryNumericField;
-        final: FoundryNumericField;
       };
       bind: {
         base: FoundryNumericField;
-        final: FoundryNumericField;
       };
       control: {
         base: FoundryNumericField;
-        final: FoundryNumericField;
       };
     };
-    spells: [];
-    spellMaintenances: [];
-    selectedSpells: [];
-    summons: [];
-    metamagics: [];
   };
 
   domine: {

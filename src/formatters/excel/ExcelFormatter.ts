@@ -24,6 +24,7 @@ enum SheetNames {
   Principal = "Principal",
   General = "General",
   PDs = "PDs",
+  Mystic = "Místicos",
 }
 
 export class ExcelFormatter {
@@ -221,6 +222,38 @@ export class ExcelFormatter {
         },
       },
       wearArmor: { value: sheetPDs["AA25"].v },
+    };
+  }
+
+  getMysticData(): ActorData["mystic"] {
+    const sheetMystic = this.getSheet(SheetNames.Mystic);
+
+    return {
+      act: {
+        main: {
+          base: {
+            value: sheetMystic["L12"].v,
+          },
+        },
+      },
+      magicProjection: {
+        base: { value: sheetMystic["O12"].v },
+        imbalance: {
+          offensive: { base: { value: sheetMystic["P12"].v } },
+          defensive: { base: { value: sheetMystic["Q12"].v } },
+        },
+      },
+      summoning: {
+        summon: { base: { value: sheetMystic["M25"].v } },
+        control: { base: { value: sheetMystic["M26"].v } },
+        bind: { base: { value: sheetMystic["M27"].v } },
+        banish: { base: { value: sheetMystic["M28"].v } },
+      },
+      zeonRegeneration: { base: { value: sheetMystic["J12"].v } },
+      innateMagic: { main: { value: sheetMystic["L14"].v } },
+      zeon: {
+        max: sheetMystic["K18"].v,
+      },
     };
   }
 }
