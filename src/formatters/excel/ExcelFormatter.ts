@@ -25,6 +25,7 @@ enum SheetNames {
   General = "General",
   PDs = "PDs",
   Mystic = "Místicos",
+  Ki = "Ki",
 }
 
 export class ExcelFormatter {
@@ -226,33 +227,70 @@ export class ExcelFormatter {
   }
 
   getMysticData(): ActorData["mystic"] {
-    const sheetMystic = this.getSheet(SheetNames.Mystic);
+    const sheet = this.getSheet(SheetNames.Mystic);
 
     return {
       act: {
         main: {
           base: {
-            value: sheetMystic["L12"].v,
+            value: sheet["L12"].v,
           },
         },
       },
       magicProjection: {
-        base: { value: sheetMystic["O12"].v },
+        base: { value: sheet["O12"].v },
         imbalance: {
-          offensive: { base: { value: sheetMystic["P12"].v } },
-          defensive: { base: { value: sheetMystic["Q12"].v } },
+          offensive: { base: { value: sheet["P12"].v } },
+          defensive: { base: { value: sheet["Q12"].v } },
         },
       },
       summoning: {
-        summon: { base: { value: sheetMystic["M25"].v } },
-        control: { base: { value: sheetMystic["M26"].v } },
-        bind: { base: { value: sheetMystic["M27"].v } },
-        banish: { base: { value: sheetMystic["M28"].v } },
+        summon: { base: { value: sheet["M25"].v } },
+        control: { base: { value: sheet["M26"].v } },
+        bind: { base: { value: sheet["M27"].v } },
+        banish: { base: { value: sheet["M28"].v } },
       },
-      zeonRegeneration: { base: { value: sheetMystic["J12"].v } },
-      innateMagic: { main: { value: sheetMystic["L14"].v } },
+      zeonRegeneration: { base: { value: sheet["J12"].v } },
+      innateMagic: { main: { value: sheet["L14"].v } },
       zeon: {
-        max: sheetMystic["K18"].v,
+        max: sheet["K18"].v,
+      },
+    };
+  }
+
+  getDomineData(): ActorData["domine"] {
+    const sheet = this.getSheet(SheetNames.Ki);
+
+    return {
+      seals: {
+        minor: {
+          earth: { isActive: sheet["X11"] !== undefined },
+          metal: { isActive: sheet["X12"] !== undefined },
+          wind: { isActive: sheet["X13"] !== undefined },
+          water: { isActive: sheet["X14"] !== undefined },
+          wood: { isActive: sheet["X15"] !== undefined },
+        },
+        major: {
+          earth: { isActive: sheet["Y11"] !== undefined },
+          metal: { isActive: sheet["Y12"] !== undefined },
+          wind: { isActive: sheet["Y13"] !== undefined },
+          water: { isActive: sheet["Y14"] !== undefined },
+          wood: { isActive: sheet["Y15"] !== undefined },
+        },
+      },
+      kiAccumulation: {
+        agility: { base: { value: sheet["D12"].v } },
+        constitution: { base: { value: sheet["D14"].v } },
+        dexterity: { base: { value: sheet["D16"].v } },
+        strength: { base: { value: sheet["D18"].v } },
+        power: { base: { value: sheet["D20"].v } },
+        willPower: { base: { value: sheet["D22"].v } },
+        generic: { max: sheet["F24"].v },
+      },
+      martialKnowledge: {
+        max: {
+          value: sheet["C29"].v,
+        },
       },
     };
   }

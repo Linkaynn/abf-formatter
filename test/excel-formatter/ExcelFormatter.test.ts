@@ -158,15 +158,44 @@ describe("Excel formatter must", () => {
     const v = formatter.getMysticData();
 
     expect(v.act.main.base.value).toBe(65);
+
     expect(v.zeon.max).toBe(870);
+
     expect(v.innateMagic.main.value).toBe(20);
+
     expect(v.summoning.summon.base.value).toBe(20);
     expect(v.summoning.control.base.value).toBe(5);
     expect(v.summoning.bind.base.value).toBe(20);
     expect(v.summoning.banish.base.value).toBe(20);
+
     expect(v.magicProjection.base.value).toBe(60);
     expect(v.magicProjection.imbalance.offensive.base.value).toBe(90);
     expect(v.magicProjection.imbalance.defensive.base.value).toBe(10);
+
     expect(v.zeonRegeneration.base.value).toBe(205);
+  });
+
+  it("format domine data", () => {
+    const v = formatter.getDomineData();
+
+    expect(v.seals.minor.earth.isActive).toBe(false);
+    expect(v.seals.minor.metal.isActive).toBe(false);
+    expect(v.seals.minor.wind.isActive).toBe(false);
+    expect(v.seals.minor.water.isActive).toBe(false);
+    expect(v.seals.minor.wood.isActive).toBe(false);
+
+    expect(v.seals.major.earth.isActive).toBe(false);
+    expect(v.seals.major.metal.isActive).toBe(false);
+    expect(v.seals.major.wind.isActive).toBe(false);
+    expect(v.seals.major.water.isActive).toBe(false);
+    expect(v.seals.major.wood.isActive).toBe(false);
+
+    expect(v.kiAccumulation.agility.base.value).toBe(1);
+    expect(v.kiAccumulation.constitution.base.value).toBe(1);
+    expect(v.kiAccumulation.dexterity.base.value).toBe(1);
+    expect(v.kiAccumulation.strength.base.value).toBe(1);
+    expect(v.kiAccumulation.power.base.value).toBe(2);
+    expect(v.kiAccumulation.willPower.base.value).toBe(1);
+    expect(v.kiAccumulation.generic.max).toBe(55);
   });
 });

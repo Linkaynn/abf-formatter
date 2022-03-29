@@ -14,14 +14,6 @@ import { FoundryBooleanField } from "./fields/FoundryBooleanField";
 
 export type ActorData = {
   version: number;
-  ui: {
-    contractibleItems: {};
-    tabVisibility: {
-      mystic: FoundryBooleanField;
-      domine: FoundryBooleanField;
-      psychic: FoundryBooleanField;
-    };
-  };
   general: ActorDataGeneral;
 
   characteristics: {
@@ -95,13 +87,6 @@ export type ActorData = {
   };
 
   domine: {
-    kiSkills: [];
-    nemesisSkills: [];
-    arsMagnus: [];
-    martialArts: [];
-    creatures: [];
-    specialSkills: [];
-    techniques: [];
     seals: {
       minor: {
         earth: {
@@ -139,41 +124,28 @@ export type ActorData = {
       };
     };
     martialKnowledge: {
-      used: FoundryNumericField;
       max: FoundryNumericField;
     };
     kiAccumulation: {
       strength: {
-        accumulated: FoundryNumericField;
         base: FoundryNumericField;
-        final: FoundryNumericField;
       };
       agility: {
-        accumulated: FoundryNumericField;
         base: FoundryNumericField;
-        final: FoundryNumericField;
       };
       dexterity: {
-        accumulated: FoundryNumericField;
         base: FoundryNumericField;
-        final: FoundryNumericField;
       };
       constitution: {
-        accumulated: FoundryNumericField;
         base: FoundryNumericField;
-        final: FoundryNumericField;
       };
       willPower: {
-        accumulated: FoundryNumericField;
         base: FoundryNumericField;
-        final: FoundryNumericField;
       };
       power: {
-        accumulated: FoundryNumericField;
         base: FoundryNumericField;
-        final: FoundryNumericField;
       };
-      generic: FoundryMaximumField;
+      generic: { max: number };
     };
   };
 
