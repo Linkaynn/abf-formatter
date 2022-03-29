@@ -198,4 +198,11 @@ describe("Excel formatter must", () => {
     expect(v.kiAccumulation.willPower.base.value).toBe(1);
     expect(v.kiAccumulation.generic.max).toBe(55);
   });
+
+  it("format psychic data", () => {
+    const v = formatter.getPsychicData();
+
+    expect(v.psychicPoints.max).toBe(1);
+    expect(v.psychicProjection.base.value).toBe(10);
+  });
 });

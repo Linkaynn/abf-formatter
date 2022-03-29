@@ -26,6 +26,7 @@ enum SheetNames {
   PDs = "PDs",
   Mystic = "Místicos",
   Ki = "Ki",
+  Psychic = "Psíquicos",
 }
 
 export class ExcelFormatter {
@@ -292,6 +293,17 @@ export class ExcelFormatter {
           value: sheet["C29"].v,
         },
       },
+    };
+  }
+
+  getPsychicData(): ActorData["psychic"] {
+    const sheetPDs = this.getSheet(SheetNames.PDs);
+
+    return {
+      psychicPoints: {
+        max: sheetPDs["AA108"].v,
+      },
+      psychicProjection: { base: { value: sheetPDs["AA109"].v } },
     };
   }
 }

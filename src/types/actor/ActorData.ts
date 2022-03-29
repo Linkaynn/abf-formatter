@@ -150,21 +150,9 @@ export type ActorData = {
   };
 
   psychic: {
-    psychicPotential: {
-      base: FoundryNumericField;
-      final: FoundryNumericField;
-    };
     psychicProjection: {
       base: FoundryNumericField;
-      final: FoundryNumericField;
     };
     psychicPoints: FoundryMaximumField;
-    psychicPowers: [];
-    psychicDisciplines: [];
-    mentalPatterns: [];
-    innatePsychicPower: {
-      amount: FoundryNumericField;
-    };
-    innatePsychicPowers: [];
   };
 };
