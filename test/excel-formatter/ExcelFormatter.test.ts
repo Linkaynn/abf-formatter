@@ -7,7 +7,7 @@ describe("Excel formatter must", () => {
   let formatter: ExcelFormatter;
 
   beforeAll(() => {
-    formatter = new ExcelFormatter(`${__dirname}/../fixtures/PJ.xlsm`);
+    formatter = ExcelFormatter.fromPath(`${__dirname}/../fixtures/PJ.xlsm`);
   });
 
   it("format primary characteristics", () => {

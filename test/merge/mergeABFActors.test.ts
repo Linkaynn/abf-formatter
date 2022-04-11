@@ -10,7 +10,7 @@ test("should merge actors correctly", () => {
     })
   );
 
-  const formatter = new ExcelFormatter(`${__dirname}/../fixtures/PJ.xlsm`);
+  const formatter = ExcelFormatter.fromPath(`${__dirname}/../fixtures/PJ.xlsm`);
 
   const formattedActor = formatter.getActor();
 

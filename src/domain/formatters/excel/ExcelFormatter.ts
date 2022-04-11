@@ -30,10 +30,14 @@ enum SheetNames {
 }
 
 export class ExcelFormatter {
-  private workbook: WorkBook;
+  private constructor(private readonly workbook: XLSX.WorkBook) {}
 
-  constructor(readonly xlsmPath: string) {
-    this.workbook = XLSX.readFile(this.xlsmPath);
+  static fromPath(path: string) {
+    return new ExcelFormatter(XLSX.readFile(path));
+  }
+
+  static fromArrayBuffer(data: ArrayBuffer) {
+    return new ExcelFormatter(XLSX.read(data, { type: "array" }));
   }
 
   private getSheet(name: SheetNames) {
