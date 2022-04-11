@@ -1,7 +1,7 @@
 import {
   ExcelFormatter,
   UNKNOWN_SKILL_VALUE,
-} from "../../src/formatters/excel/ExcelFormatter";
+} from "../../src/domain/formatters/excel/ExcelFormatter";
 
 describe("Excel formatter must", () => {
   let formatter: ExcelFormatter;

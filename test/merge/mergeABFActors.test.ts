@@ -1,7 +1,7 @@
 import * as fs from "fs";
-import { ExcelFormatter } from "../../src/formatters/excel/ExcelFormatter";
-import { mergeABFActors } from "../../src/merge/mergeABFActors";
-import { Actor } from "../../src/types/actor/Actor";
+import { ExcelFormatter } from "../../src/domain/formatters/excel/ExcelFormatter";
+import { mergeABFActors } from "../../src/domain/merge/mergeABFActors";
+import { Actor } from "../../src/domain/types/actor/Actor";
 
 test("should merge actors correctly", () => {
   const sourceActor: Actor = JSON.parse(
