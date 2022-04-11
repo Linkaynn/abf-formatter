@@ -99,7 +99,7 @@ const App = () => {
         <div className="col-md-6 col-xs-12">
           <Form.Group controlId="excel-data" className="mb-3">
             <Form.Label>
-              <b>Excel actor file</b>
+              <b>Excel file</b>
             </Form.Label>
             <Form.Control type="file" onChange={handleExcelFile} />
           </Form.Group>
@@ -115,7 +115,7 @@ const App = () => {
       </Row>
       <div className="mt-5">
         <h5>Instructions</h5>
-        <p>To make this work we need 2 ingredients</p>
+        <p>To make this work, we need 2 ingredients:</p>
         <ul>
           <li>
             Exported actor data in JSON format (
@@ -129,7 +129,7 @@ const App = () => {
             )
           </li>
           <li>
-            Excel with the actual data of your character (
+            Excel with the current data of your character (
             <a
               target="_blank"
               rel="noreferrer noopener"
