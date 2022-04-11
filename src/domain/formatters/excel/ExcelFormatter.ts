@@ -1,6 +1,5 @@
 import * as XLSX from "xlsx";
 import { PrimaryCharacteristics } from "../../types/actor/parts/PrimaryCharacteristics";
-import { WorkBook } from "xlsx";
 import { SecondaryCharacteristics } from "../../types/actor/parts/SecondaryCharacteristics";
 import { Actor, ActorData } from "../../types/actor/Actor";
 import { AthleticsSkills } from "../../types/actor/parts/AthleticsSkills";
@@ -48,14 +47,14 @@ export class ExcelFormatter {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
-      agility: { value: sheet["E11"].v },
-      constitution: { value: sheet["E12"].v },
-      dexterity: { value: sheet["E13"].v },
-      strength: { value: sheet["E14"].v },
-      intelligence: { value: sheet["E15"].v },
-      perception: { value: sheet["E16"].v },
-      power: { value: sheet["E17"].v },
-      willPower: { value: sheet["E18"].v },
+      agility: { value: sheet["E11"]?.v ?? 5 },
+      constitution: { value: sheet["E12"]?.v ?? 5 },
+      dexterity: { value: sheet["E13"]?.v ?? 5 },
+      strength: { value: sheet["E14"]?.v ?? 5 },
+      intelligence: { value: sheet["E15"]?.v ?? 5 },
+      perception: { value: sheet["E16"]?.v ?? 5 },
+      power: { value: sheet["E17"]?.v ?? 5 },
+      willPower: { value: sheet["E18"]?.v ?? 5 },
     };
   }
 
@@ -63,15 +62,15 @@ export class ExcelFormatter {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
-      fatigue: { max: sheet["N16"].v },
-      initiative: { base: { value: sheet["D31"].v } },
-      lifePoints: { max: sheet["N11"].v },
+      fatigue: { max: sheet["N16"]?.v ?? 0 },
+      initiative: { base: { value: sheet["D31"]?.v } },
+      lifePoints: { max: sheet["N11"]?.v },
       resistances: {
-        physical: { base: { value: sheet["J58"].v } },
-        disease: { base: { value: sheet["J59"].v } },
-        poison: { base: { value: sheet["J60"].v } },
-        magic: { base: { value: sheet["J61"].v } },
-        psychic: { base: { value: sheet["J62"].v } },
+        physical: { base: { value: sheet["J58"]?.v } },
+        disease: { base: { value: sheet["J59"]?.v } },
+        poison: { base: { value: sheet["J60"]?.v } },
+        magic: { base: { value: sheet["J61"]?.v } },
+        psychic: { base: { value: sheet["J62"]?.v } },
       },
     };
   }
@@ -80,13 +79,13 @@ export class ExcelFormatter {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
-      acrobatics: { base: { value: sheet["Q22"].v } },
-      athleticism: { base: { value: sheet["Q23"].v } },
-      ride: { base: { value: sheet["Q24"].v } },
-      swim: { base: { value: sheet["Q25"].v } },
-      climb: { base: { value: sheet["Q26"].v } },
-      jump: { base: { value: sheet["Q27"].v } },
-      piloting: { base: { value: sheet["Q28"].v } },
+      acrobatics: { base: { value: sheet["Q22"]?.v ?? 0 } },
+      athleticism: { base: { value: sheet["Q23"]?.v ?? 0 } },
+      ride: { base: { value: sheet["Q24"]?.v ?? 0 } },
+      swim: { base: { value: sheet["Q25"]?.v ?? 0 } },
+      climb: { base: { value: sheet["Q26"]?.v ?? 0 } },
+      jump: { base: { value: sheet["Q27"]?.v ?? 0 } },
+      piloting: { base: { value: sheet["Q28"]?.v ?? 0 } },
     };
   }
 
@@ -94,13 +93,13 @@ export class ExcelFormatter {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
-      style: { base: { value: sheet["Q29"].v } },
-      intimidate: { base: { value: sheet["Q30"].v } },
-      leadership: { base: { value: sheet["Q31"].v } },
-      persuasion: { base: { value: sheet["Q32"].v } },
-      trading: { base: { value: sheet["Q33"].v } },
-      streetwise: { base: { value: sheet["Q34"].v } },
-      etiquette: { base: { value: sheet["Q35"].v } },
+      style: { base: { value: sheet["Q29"]?.v ?? 0 } },
+      intimidate: { base: { value: sheet["Q30"]?.v ?? 0 } },
+      leadership: { base: { value: sheet["Q31"]?.v ?? 0 } },
+      persuasion: { base: { value: sheet["Q32"]?.v ?? 0 } },
+      trading: { base: { value: sheet["Q33"]?.v ?? 0 } },
+      streetwise: { base: { value: sheet["Q34"]?.v ?? 0 } },
+      etiquette: { base: { value: sheet["Q35"]?.v ?? 0 } },
     };
   }
 
@@ -108,9 +107,9 @@ export class ExcelFormatter {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
-      notice: { base: { value: sheet["Q36"].v } },
-      search: { base: { value: sheet["Q37"].v } },
-      track: { base: { value: sheet["Q38"].v } },
+      notice: { base: { value: sheet["Q36"]?.v ?? 0 } },
+      search: { base: { value: sheet["Q37"]?.v ?? 0 } },
+      track: { base: { value: sheet["Q38"]?.v ?? 0 } },
     };
   }
 
@@ -118,18 +117,18 @@ export class ExcelFormatter {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
-      animals: { base: { value: sheet["Q39"].v } },
-      science: { base: { value: capToDefault(sheet["Q40"].v) } },
-      law: { base: { value: sheet["Q41"].v } },
-      herbalLore: { base: { value: sheet["Q42"].v } },
-      history: { base: { value: capToDefault(sheet["Q43"].v) } },
-      tactics: { base: { value: sheet["Q44"].v } },
-      medicine: { base: { value: capToDefault(sheet["Q45"].v) } },
-      memorize: { base: { value: sheet["Q46"].v } },
-      navigation: { base: { value: sheet["Q47"].v } },
-      occult: { base: { value: sheet["Q48"].v } },
-      appraisal: { base: { value: sheet["Q49"].v } },
-      magicAppraisal: { base: { value: sheet["Q50"].v } },
+      animals: { base: { value: sheet["Q39"]?.v ?? 0 } },
+      science: { base: { value: capToDefault(sheet["Q40"]?.v ?? 0) } },
+      law: { base: { value: sheet["Q41"]?.v ?? 0 } },
+      herbalLore: { base: { value: sheet["Q42"]?.v ?? 0 } },
+      history: { base: { value: capToDefault(sheet["Q43"]?.v ?? 0) } },
+      tactics: { base: { value: sheet["Q44"]?.v ?? 0 } },
+      medicine: { base: { value: capToDefault(sheet["Q45"]?.v ?? 0) } },
+      memorize: { base: { value: sheet["Q46"]?.v ?? 0 } },
+      navigation: { base: { value: sheet["Q47"]?.v ?? 0 } },
+      occult: { base: { value: sheet["Q48"]?.v ?? 0 } },
+      appraisal: { base: { value: sheet["Q49"]?.v ?? 0 } },
+      magicAppraisal: { base: { value: sheet["Q50"]?.v ?? 0 } },
     };
   }
 
@@ -137,9 +136,9 @@ export class ExcelFormatter {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
-      composure: { base: { value: sheet["Q51"].v } },
-      featsOfStrength: { base: { value: sheet["Q52"].v } },
-      withstandPain: { base: { value: sheet["Q53"].v } },
+      composure: { base: { value: sheet["Q51"]?.v ?? 0 } },
+      featsOfStrength: { base: { value: sheet["Q52"]?.v ?? 0 } },
+      withstandPain: { base: { value: sheet["Q53"]?.v ?? 0 } },
     };
   }
 
@@ -147,13 +146,13 @@ export class ExcelFormatter {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
-      lockPicking: { base: { value: sheet["Q54"].v } },
-      disguise: { base: { value: sheet["Q55"].v } },
-      hide: { base: { value: sheet["Q56"].v } },
-      theft: { base: { value: sheet["Q57"].v } },
-      stealth: { base: { value: sheet["Q58"].v } },
-      trapLore: { base: { value: sheet["Q59"].v } },
-      poisons: { base: { value: capToDefault(sheet["Q60"].v) } },
+      lockPicking: { base: { value: sheet["Q54"]?.v ?? 0 } },
+      disguise: { base: { value: sheet["Q55"]?.v ?? 0 } },
+      hide: { base: { value: sheet["Q56"]?.v ?? 0 } },
+      theft: { base: { value: sheet["Q57"]?.v ?? 0 } },
+      stealth: { base: { value: sheet["Q58"]?.v ?? 0 } },
+      trapLore: { base: { value: sheet["Q59"]?.v ?? 0 } },
+      poisons: { base: { value: capToDefault(sheet["Q60"]?.v ?? 0) } },
     };
   }
 
@@ -161,18 +160,18 @@ export class ExcelFormatter {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
-      art: { base: { value: sheet["Q61"].v } },
-      dance: { base: { value: capToDefault(sheet["Q62"].v) } },
-      forging: { base: { value: capToDefault(sheet["Q63"].v) } },
-      runes: { base: { value: sheet["Q64"].v } },
-      alchemy: { base: { value: sheet["Q65"].v } },
-      animism: { base: { value: sheet["Q66"].v } },
-      music: { base: { value: capToDefault(sheet["Q67"].v) } },
-      sleightOfHand: { base: { value: sheet["Q68"].v } },
-      ritualCalligraphy: { base: { value: sheet["Q69"].v } },
-      jewelry: { base: { value: sheet["Q70"].v } },
-      tailoring: { base: { value: sheet["Q71"].v } },
-      puppetMaking: { base: { value: sheet["Q72"].v } },
+      art: { base: { value: sheet["Q61"]?.v ?? 0 } },
+      dance: { base: { value: capToDefault(sheet["Q62"]?.v ?? 0) } },
+      forging: { base: { value: capToDefault(sheet["Q63"]?.v ?? 0) } },
+      runes: { base: { value: sheet["Q64"]?.v ?? 0 } },
+      alchemy: { base: { value: sheet["Q65"]?.v ?? 0 } },
+      animism: { base: { value: sheet["Q66"]?.v ?? 0 } },
+      music: { base: { value: capToDefault(sheet["Q67"]?.v ?? 0) } },
+      sleightOfHand: { base: { value: sheet["Q68"]?.v ?? 0 } },
+      ritualCalligraphy: { base: { value: sheet["Q69"]?.v ?? 0 } },
+      jewelry: { base: { value: sheet["Q70"]?.v ?? 0 } },
+      tailoring: { base: { value: sheet["Q71"]?.v ?? 0 } },
+      puppetMaking: { base: { value: sheet["Q72"]?.v ?? 0 } },
     };
   }
 
@@ -181,15 +180,15 @@ export class ExcelFormatter {
     const sheetPrincipal = this.getSheet(SheetNames.Principal);
 
     return {
-      age: { value: sheetGeneral["F26"].v },
-      appearance: { value: sheetGeneral["P24"].v },
-      eyes: { value: sheetGeneral["I25"].v },
-      gender: { value: sheetGeneral["F24"].v },
-      hair: { value: sheetGeneral["N25"].v },
-      height: { value: sheetGeneral["I24"].v },
-      race: { value: sheetGeneral["F23"].v },
-      size: { value: sheetPrincipal["K6"].v },
-      weight: { value: sheetGeneral["L24"].v },
+      age: { value: sheetGeneral["F26"]?.v },
+      appearance: { value: sheetGeneral["P24"]?.v },
+      eyes: { value: sheetGeneral["I25"]?.v },
+      gender: { value: sheetGeneral["F24"]?.v },
+      hair: { value: sheetGeneral["N25"]?.v },
+      height: { value: sheetGeneral["I24"]?.v },
+      race: { value: sheetGeneral["F23"]?.v },
+      size: { value: sheetPrincipal["K6"]?.v },
+      weight: { value: sheetGeneral["L24"]?.v },
     };
   }
 
@@ -199,11 +198,11 @@ export class ExcelFormatter {
 
     return {
       aspect: this.getAspect(),
-      presence: { base: { value: sheetPrincipal["J57"].v } },
+      presence: { base: { value: sheetPrincipal["J57"]?.v } },
       money: {
-        gold: { value: sheetGeneral["Y59"].v },
-        silver: { value: sheetGeneral["Y61"].v },
-        cooper: { value: sheetGeneral["Y63"].v },
+        gold: { value: sheetGeneral["Y59"]?.v },
+        silver: { value: sheetGeneral["Y61"]?.v },
+        cooper: { value: sheetGeneral["Y63"]?.v },
       },
     };
   }
@@ -214,20 +213,20 @@ export class ExcelFormatter {
     return {
       attack: {
         base: {
-          value: sheetPDs["AA22"].v,
+          value: sheetPDs["AA22"]?.v,
         },
       },
       block: {
         base: {
-          value: sheetPDs["AA23"].v,
+          value: sheetPDs["AA23"]?.v,
         },
       },
       dodge: {
         base: {
-          value: sheetPDs["AA24"].v,
+          value: sheetPDs["AA24"]?.v,
         },
       },
-      wearArmor: { value: sheetPDs["AA25"].v },
+      wearArmor: { value: sheetPDs["AA25"]?.v },
     };
   }
 
@@ -238,27 +237,27 @@ export class ExcelFormatter {
       act: {
         main: {
           base: {
-            value: sheet["L12"].v,
+            value: sheet["L12"]?.v,
           },
         },
       },
       magicProjection: {
-        base: { value: sheet["O12"].v },
+        base: { value: sheet["O12"]?.v },
         imbalance: {
-          offensive: { base: { value: sheet["P12"].v } },
-          defensive: { base: { value: sheet["Q12"].v } },
+          offensive: { base: { value: sheet["P12"]?.v } },
+          defensive: { base: { value: sheet["Q12"]?.v } },
         },
       },
       summoning: {
-        summon: { base: { value: sheet["M25"].v } },
-        control: { base: { value: sheet["M26"].v } },
-        bind: { base: { value: sheet["M27"].v } },
-        banish: { base: { value: sheet["M28"].v } },
+        summon: { base: { value: sheet["M25"]?.v } },
+        control: { base: { value: sheet["M26"]?.v } },
+        bind: { base: { value: sheet["M27"]?.v } },
+        banish: { base: { value: sheet["M28"]?.v } },
       },
-      zeonRegeneration: { base: { value: sheet["J12"].v } },
-      innateMagic: { main: { value: sheet["L14"].v } },
+      zeonRegeneration: { base: { value: sheet["J12"]?.v } },
+      innateMagic: { main: { value: sheet["L14"]?.v } },
       zeon: {
-        max: sheet["K18"].v,
+        max: sheet["K18"]?.v,
       },
     };
   }
@@ -284,17 +283,17 @@ export class ExcelFormatter {
         },
       },
       kiAccumulation: {
-        agility: { base: { value: sheet["D12"].v } },
-        constitution: { base: { value: sheet["D14"].v } },
-        dexterity: { base: { value: sheet["D16"].v } },
-        strength: { base: { value: sheet["D18"].v } },
-        power: { base: { value: sheet["D20"].v } },
-        willPower: { base: { value: sheet["D22"].v } },
-        generic: { max: sheet["F24"].v },
+        agility: { base: { value: sheet["D12"]?.v } },
+        constitution: { base: { value: sheet["D14"]?.v } },
+        dexterity: { base: { value: sheet["D16"]?.v } },
+        strength: { base: { value: sheet["D18"]?.v } },
+        power: { base: { value: sheet["D20"]?.v } },
+        willPower: { base: { value: sheet["D22"]?.v } },
+        generic: { max: sheet["F24"]?.v },
       },
       martialKnowledge: {
         max: {
-          value: sheet["C29"].v,
+          value: sheet["C29"]?.v,
         },
       },
     };
@@ -305,9 +304,9 @@ export class ExcelFormatter {
 
     return {
       psychicPoints: {
-        max: sheetPDs["AA108"].v,
+        max: sheetPDs["AA108"]?.v,
       },
-      psychicProjection: { base: { value: sheetPDs["AA109"].v } },
+      psychicProjection: { base: { value: sheetPDs["AA109"]?.v } },
     };
   }
 
@@ -315,7 +314,7 @@ export class ExcelFormatter {
     const sheet = this.getSheet(SheetNames.General);
 
     return {
-      name: sheet["F22"].v,
+      name: sheet["F22"]?.v,
       data: {
         version: 1,
         general: this.getGeneralData(),
