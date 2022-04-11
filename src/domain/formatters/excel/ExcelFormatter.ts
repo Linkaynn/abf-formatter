@@ -47,14 +47,14 @@ export class ExcelFormatter {
     const sheet = this.getSheet(SheetNames.Principal);
 
     return {
-      agility: { value: sheet["E11"]?.v ?? 5 },
-      constitution: { value: sheet["E12"]?.v ?? 5 },
-      dexterity: { value: sheet["E13"]?.v ?? 5 },
-      strength: { value: sheet["E14"]?.v ?? 5 },
-      intelligence: { value: sheet["E15"]?.v ?? 5 },
-      perception: { value: sheet["E16"]?.v ?? 5 },
-      power: { value: sheet["E17"]?.v ?? 5 },
-      willPower: { value: sheet["E18"]?.v ?? 5 },
+      agility: { value: sheet["G11"]?.v ?? 5 },
+      constitution: { value: sheet["G12"]?.v ?? 5 },
+      dexterity: { value: sheet["G13"]?.v ?? 5 },
+      strength: { value: sheet["G14"]?.v ?? 5 },
+      intelligence: { value: sheet["G15"]?.v ?? 5 },
+      perception: { value: sheet["G16"]?.v ?? 5 },
+      power: { value: sheet["G17"]?.v ?? 5 },
+      willPower: { value: sheet["G18"]?.v ?? 5 },
     };
   }
 

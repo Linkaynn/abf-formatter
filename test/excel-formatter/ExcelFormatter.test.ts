@@ -19,7 +19,7 @@ describe("Excel formatter must", () => {
     expect(v.strength.value).toBe(9);
     expect(v.intelligence.value).toBe(9);
     expect(v.perception.value).toBe(5);
-    expect(v.power.value).toBe(10);
+    expect(v.power.value).toBe(12);
     expect(v.willPower.value).toBe(7);
   });
 
