@@ -1,6 +1,6 @@
 {
-  "short_name": "ABF Importer",
-  "name": "Anima Beyond Foundry Importer",
+  "short_name": "ABF Formatter",
+  "name": "Anima Beyond Foundry Formatter",
   "icons": [
     {
       "src": "android-chrome-192x192.png",
