@@ -122,7 +122,7 @@ const App = () => {
             <a
               target="_blank"
               rel="noreferrer noopener"
-              href="/assets/export-actor-example.mp4"
+              href="assets/export-actor-example.mp4"
             >
               instructions
             </a>
