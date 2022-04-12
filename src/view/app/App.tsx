@@ -1,11 +1,11 @@
-import React, { ChangeEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Actor } from "../../domain/types/actor/Actor";
-import { ExcelFormatter } from "../../domain/formatters/excel/ExcelFormatter";
-import { Button, Form, Row } from "react-bootstrap";
+import { Button, Row } from "react-bootstrap";
 import { mergeABFActors } from "../../domain/merge/mergeABFActors";
 import Instructions from "./components/Instructions";
-import FileInput from "./components/FileInput";
 import Faq from "./components/Faq";
+import ExcelFileUploader from "./components/ExcelFileUploader";
+import FoundryFileUploader from "./components/FoundryFileUploader";
 
 const downloadObjectAsJson = (exportObj: any, exportName: string) => {
   const dataStr =
@@ -21,90 +21,40 @@ const downloadObjectAsJson = (exportObj: any, exportName: string) => {
 };
 
 const App = () => {
-  const [abfData, setAbfData] = useState<Actor>();
-  const [formatter, setFormatter] = useState<ExcelFormatter>();
+  const [sourceActor, setSourceActor] = useState<Actor>();
+  const [editedActor, setEditedActor] = useState<Actor>();
 
-  const [abfActor, setAbfActor] = useState<Actor>();
-
-  const handleFoundryFile = (e: ChangeEvent<HTMLInputElement>) => {
-    const files = e.currentTarget.files;
-
-    if (files != null && files.length > 0) {
-      setAbfActor(undefined);
-
-      const file = files[0];
-
-      const reader = new FileReader();
-      reader.addEventListener("load", (event) => {
-        if (event.target?.result != null) {
-          const result = event.target.result;
-
-          if (typeof result === "string") {
-            setAbfData(JSON.parse(result));
-          }
-        }
-      });
-
-      reader.readAsText(file);
-    }
-  };
-
-  const handleExcelFile = (e: ChangeEvent<HTMLInputElement>) => {
-    const files = e.currentTarget.files;
-
-    if (files != null && files.length > 0) {
-      setAbfActor(undefined);
-
-      const file = files[0];
-
-      const reader = new FileReader();
-      reader.addEventListener("load", (event) => {
-        if (event.target?.result != null) {
-          const result = event.target.result as ArrayBuffer;
-
-          setFormatter(ExcelFormatter.fromArrayBuffer(result));
-        }
-      });
-
-      reader.readAsArrayBuffer(file);
-    }
-  };
+  const [newActor, setNewActor] = useState<Actor>();
 
   useEffect(() => {
-    if (abfActor) return;
+    if (newActor) return;
 
-    if (abfData !== undefined && formatter !== undefined) {
-      setAbfActor(mergeABFActors(abfData, formatter.getActor()));
+    if (sourceActor !== undefined && editedActor !== undefined) {
+      setNewActor(mergeABFActors(sourceActor, editedActor));
     }
-  }, [abfData, formatter]);
+  }, [sourceActor, editedActor]);
 
-  const canDownloadMergedActor = abfActor !== undefined;
+  const canDownloadMergedActor = newActor !== undefined;
 
   const downloadMergedActor = () => {
     if (canDownloadMergedActor) {
-      downloadObjectAsJson(abfActor, abfActor.name);
+      downloadObjectAsJson(newActor, newActor.name);
     }
   };
 
   return (
-    <div className="container">
+    <div className="container m-md-5 mt-0">
       <h1>Anima Beyond Foundry Formatter</h1>
       <Row className="mt-5">
-        <div className="col-md-6 col-xs-12">
-          <FileInput
-            className="mb-3"
-            labelText="Foundry exported JSON actor file"
-            onChange={handleFoundryFile}
-          />
-        </div>
-        <div className="col-md-6 col-xs-12">
-          <FileInput
-            className="mb-3"
-            labelText="Excel file"
-            onChange={handleExcelFile}
-          />
-        </div>
-        <div className="col-12">
+        <FoundryFileUploader
+          className="col-md-6 col-xs-12"
+          onFormatActor={setSourceActor}
+        />
+        <ExcelFileUploader
+          className="col-md-6 col-xs-12"
+          onFormatActor={setEditedActor}
+        />
+        <div className="col-12 mt-3">
           <Button
             disabled={!canDownloadMergedActor}
             onClick={downloadMergedActor}

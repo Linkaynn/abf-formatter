@@ -1,5 +1,3 @@
-import React from "react";
-
 const Faq = () => {
   return (
     <div>
@@ -31,7 +29,12 @@ const Faq = () => {
           Opening an issue in the project:
           https://github.com/Linkaynn/abf-formatter/issues
         </li>
-        <li>Email: jeseromeroarbelo@gmail.com</li>
+        <li>
+          Email:{" "}
+          <a href="mailto:jeseromeroarbelo@gmail.com">
+            jeseromeroarbelo@gmail.com
+          </a>
+        </li>
         <li>Discord: Linkaynn#0276</li>
       </ul>
     </div>
