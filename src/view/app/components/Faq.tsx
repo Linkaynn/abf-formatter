@@ -27,7 +27,13 @@ const Faq = () => {
       <ul>
         <li>
           Opening an issue in the project:
-          https://github.com/Linkaynn/abf-formatter/issues
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://github.com/Linkaynn/abf-formatter/issues"
+          >
+            https://github.com/Linkaynn/abf-formatter/issues
+          </a>
         </li>
         <li>
           Email:{" "}
