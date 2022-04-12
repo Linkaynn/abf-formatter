@@ -26,7 +26,7 @@ const Faq = () => {
       <p>You can reach me:</p>
       <ul>
         <li>
-          Opening an issue in the project:
+          Opening an issue:{" "}
           <a
             target="_blank"
             rel="noreferrer noopener"
